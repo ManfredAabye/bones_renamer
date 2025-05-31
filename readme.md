@@ -1,6 +1,8 @@
 # Blender Bone Renamer Add-on  
 **Massenumbenennung von Knochen für Rig-Konvertierungen**
 
+Es sind noch ein paar Fehler enthalten. There are still a few errors.
+
 ![Demo](https://github.com/ManfredAabye/bones_renamer/blob/master/Blender.jpg) *(Screenshot)* 
 
 ## 📋 Übersicht  
