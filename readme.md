@@ -1,4 +1,4 @@
-# Blender Bone Renamer Add-on  
+# Blender Bone Renamer Add-on Blender 4.4
 **Massenumbenennung von Knochen für Rig-Konvertierungen**
 
 Es sind noch ein paar Fehler enthalten. There are still a few errors.
