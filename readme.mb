@@ -1,15 +1,34 @@
-This is a Blender add-on to do a mass renaming of bones from and to several types of standard  armatures of 3D character models. It is intended to help save time in converting 3D character models and animations from one format to another. The supported armature types are:
+Dies ist ein **Blender-Add-on**, um **Massenumbenennungen von Knochen** zwischen verschiedenen Standard-Armatures (Skelettstrukturen) von 3D-Charaktermodellen durchzuführen. Es soll Zeit sparen, wenn man 3D-Charaktermodelle und Animationen von einem Format in ein anderes konvertiert.  
 
-MMD (MikuMikuDance) English
-XNALara
-Daz/Poser
-Blender Rigify (names of bones before the complete Rigify rig is generated)
-Sims 2
-Motion Builder
-3ds Max
-Bepu full body IK
-MMD (MikuMikuDance) Japanese
-MMD Japanese.L.R (bones renamed to add .L and .R suffixes using an import option of the Blender mmd_tools add-on)
+#### **Unterstützte Armature-Typen:**  
+- **MMD (MikuMikuDance) Englisch**  
+- **XNALara**  
+- **Daz/Poser**  
+- **Blender Rigify** (Namen der Knochen, bevor das vollständige Rigify-Rig erstellt wird)  
+- **Sims 2**  
+- **Motion Builder**  
+- **3ds Max**  
+- **Bepu Full Body IK**  
+- **MMD (MikuMikuDance) Japanisch**  
+- **MMD Japanisch.L.R** (Knochen werden mit **.L** und **.R** Suffixen umbenannt, wie bei einem Import mit dem **mmd_tools**-Add-on in Blender)  
 
-After installing the add-on, its panel should appear at the tab at the bottom left side of Blender's 3D view. 
-There are 2 drop-down list menus for the source and destination bone maps. With the armature selected to be the active object, press the button to do a mass renaming of bones.
+---
+
+### **Anwendung:**  
+1. **Installation des Add-ons:**  
+   - Nach der Installation erscheint das Panel des Add-ons im **unteren linken Bereich** der Blender-3D-Ansicht.  
+
+2. **Knochen umbenennen:**  
+   - Es gibt **zwei Dropdown-Menüs** für die **Quell- und Ziel-Knochenzuordnung**.  
+   - Wähle das **Armature-Objekt** aus, das umbenannt werden soll.  
+   - Klicke auf den Button, um eine **Massenumbenennung der Knochen** durchzuführen.  
+
+---
+
+### **Zweck:**  
+Das Tool hilft dabei, **Charaktermodelle und Animationen** schneller zwischen verschiedenen Formaten zu konvertieren, indem es automatisch die Knochennamen anpasst. Besonders nützlich für:  
+- **Rigging-Wechsel** (z. B. von DAZ zu Rigify)  
+- **Animationstransfer** (z. B. MMD-Animationen für andere Avatare nutzen)  
+- **Kompatibilität zwischen verschiedenen 3D-Tools**  
+
+Falls du spezifische Konvertierungen brauchst (z. B. **DAZ → OpenSimulator**), kann das Add-on die Knochennamen anpassen, bevor du das Modell exportierst.  
