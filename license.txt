@@ -1,3 +1,8 @@
 The files in this Github respository are distributed under the terms of the
 "Don't worry, be happy, it's free!" license.
 Don't worry, it's free!
+
+"Kein Stress, alles frei!"-Lizenz
+Die Inhalte dieses Repositories stehen unter der
+"Kein Stress, alles frei!"-Lizenz.
+Ja wirklich, komplett kostenfrei!
