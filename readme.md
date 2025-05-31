@@ -1,34 +1,56 @@
-Dies ist ein TEST **Blender-Add-on**, um **Massenumbenennungen von Knochen** zwischen verschiedenen Standard-Armatures (Skelettstrukturen) von 3D-Charaktermodellen durchzuführen. Es soll Zeit sparen, wenn man 3D-Charaktermodelle und Animationen von einem Format in ein anderes konvertiert.  
+# Blender Bone Renamer Add-on  
+**Massenumbenennung von Knochen für Rig-Konvertierungen**  
 
-#### **Unterstützte Armature-Typen:**  
-- **MMD (MikuMikuDance) Englisch**  
-- **XNALara**  
-- **Daz/Poser**  
-- **Blender Rigify** (Namen der Knochen, bevor das vollständige Rigify-Rig erstellt wird)  
-- **Sims 2**  
-- **Motion Builder**  
-- **3ds Max**  
-- **Bepu Full Body IK**  
-- **MMD (MikuMikuDance) Japanisch**  
-- **MMD Japanisch.L.R** (Knochen werden mit **.L** und **.R** Suffixen umbenannt, wie bei einem Import mit dem **mmd_tools**-Add-on in Blender)  
+![Demo](https://via.placeholder.com/800x400?text=Screenshot+of+Add-on+Panel) *(Platzhalter für Screenshot)*  
+
+## 📋 Übersicht  
+Dieses Add-on ermöglicht die **automatische Umbenennung von Armature-Knochen** zwischen verschiedenen 3D-Software-Standards. Ideal für:  
+- Rigging-Wechsel (z.B. DAZ → Rigify)  
+- Animationstransfer zwischen Formaten  
+- Vorbereitung für Game-Engines  
+
+## ✨ Features  
+- Unterstützt **11+ Armature-Typen**  
+- Inklusive **Finger- und Gesichtsknochen**  
+- Blender 4.4+ kompatibel  
+- Einfache Bedienung via Sidebar-Panel  
+
+## 🛠 Unterstützte Systeme  
+| Format            | Beispiel-Knochen       |  
+|-------------------|------------------------|  
+| **MMD (Englisch)**  | `shoulder_L`, `arm_L`  |  
+| **XNALara**        | `arm left shoulder 1`  |  
+| **DAZ/Poser**      | `lShldr`, `rThigh`     |  
+| **Rigify (Pre-Gen)**| `upper_arm.L`          |  
+| **OpenSim**        | `mShoulderLeft`        |  
+| *...und 6 weitere* |                        |  
+
+## 🚀 Installation  
+1. Lade die neueste `.zip` von [Releases]() herunter  
+2. In Blender:  
+   ```
+   Edit → Preferences → Add-ons → Install...  
+   ```
+3. Aktivieren unter **"Rigging: Bone Renamer"**
+
+## 🖥 Bedienung  
+1. Armature auswählen  
+2. Quell- und Zielformat wählen:  
+   ![Panel](https://via.placeholder.com/400x200?text=UI+Panel)  
+3. **"Rename Bones"** klicken  
+
+## 🌟 Anwendungsfälle  
+- **OpenSim-Vorbereitung**:  
+  ```DAZ → OpenSim``` (Automatische Umwandlung zu `mShoulderLeft` etc.)  
+- **MMD zu Rigify**: Kompatibilität für Animationen  
+- **Unity/Unreal Engine**: Standardisierung von Knochennamen  
+
+## 📜 Lizenz  
+**"Kein Stress, alles frei!"-Lizenz**  
+- Kommerzielle Nutzung erlaubt  
+- Keine Haftung  
+- Bei Nutzung: Credits erwünscht (aber nicht verpflichtend)  
 
 ---
 
-### **Anwendung:**  
-1. **Installation des Add-ons:**  
-   - Nach der Installation erscheint das Panel des Add-ons im **unteren linken Bereich** der Blender-3D-Ansicht.  
-
-2. **Knochen umbenennen:**  
-   - Es gibt **zwei Dropdown-Menüs** für die **Quell- und Ziel-Knochenzuordnung**.  
-   - Wähle das **Armature-Objekt** aus, das umbenannt werden soll.  
-   - Klicke auf den Button, um eine **Massenumbenennung der Knochen** durchzuführen.  
-
----
-
-### **Zweck:**  
-Das Tool hilft dabei, **Charaktermodelle und Animationen** schneller zwischen verschiedenen Formaten zu konvertieren, indem es automatisch die Knochennamen anpasst. Besonders nützlich für:  
-- **Rigging-Wechsel** (z. B. von DAZ zu Rigify)  
-- **Animationstransfer** (z. B. MMD-Animationen für andere Avatare nutzen)  
-- **Kompatibilität zwischen verschiedenen 3D-Tools**  
-
-Falls du spezifische Konvertierungen brauchst (z. B. **DAZ → OpenSimulator**), kann das Add-on die Knochennamen anpassen, bevor du das Modell exportierst.  
+💡 **Tipp**: Für Gesichtsknochen (OpenSim) die [Avastar-Blender-Erweiterung](http://avastar.online) verwenden.  
