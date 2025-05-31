@@ -1,5 +1,7 @@
 # Blender Bone Renamer Add-on  
-**Massenumbenennung von Knochen für Rig-Konvertierungen** 
+**Massenumbenennung von Knochen für Rig-Konvertierungen**
+
+![Demo](https://github.com/ManfredAabye/bones_renamer/blob/master/Blender.jpg) *(Screenshot)* 
 
 ## 📋 Übersicht  
 Dieses Add-on ermöglicht die **automatische Umbenennung von Armature-Knochen** zwischen verschiedenen 3D-Software-Standards. Ideal für:  
