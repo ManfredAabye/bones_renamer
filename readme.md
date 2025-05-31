@@ -1,4 +1,4 @@
-Dies ist ein **Blender-Add-on**, um **Massenumbenennungen von Knochen** zwischen verschiedenen Standard-Armatures (Skelettstrukturen) von 3D-Charaktermodellen durchzuführen. Es soll Zeit sparen, wenn man 3D-Charaktermodelle und Animationen von einem Format in ein anderes konvertiert.  
+Dies ist ein TEST **Blender-Add-on**, um **Massenumbenennungen von Knochen** zwischen verschiedenen Standard-Armatures (Skelettstrukturen) von 3D-Charaktermodellen durchzuführen. Es soll Zeit sparen, wenn man 3D-Charaktermodelle und Animationen von einem Format in ein anderes konvertiert.  
 
 #### **Unterstützte Armature-Typen:**  
 - **MMD (MikuMikuDance) Englisch**  
