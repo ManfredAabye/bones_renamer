@@ -1,0 +1,1561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 4.4.3 commit date:2025-04-29, commit time:14:09, hash:802179c51ccc</authoring_tool>
+    </contributor>
+    <created>2025-06-01T10:37:16</created>
+    <modified>2025-06-01T10:37:16</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images/>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Avatar" name="Avatar" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <node id="Avatar_mPelvis" name="mPelvis" sid="mPelvis" type="JOINT">
+          <matrix sid="transform">1 0 0 0 0 0.9999999 0 0 0 0 0.9999999 1.067015 0 0 0 1</matrix>
+          <node id="Avatar_mSpine1" name="mSpine1" sid="mSpine1" type="JOINT">
+            <matrix sid="transform">1 0 0 0 7.10543e-15 0.9999999 0 0 0 0 0.9999999 0.08407294 0 0 0 1</matrix>
+            <node id="Avatar_mSpine2" name="mSpine2" sid="mSpine2" type="JOINT">
+              <matrix sid="transform">1 -7.10543e-15 0 0 0 0.9999999 0 0 0 0 0.9999998 -0.08407293 0 0 0 1</matrix>
+              <node id="Avatar_mTorso" name="mTorso" sid="mTorso" type="JOINT">
+                <matrix sid="transform">1 3.9684e-9 4.24916e-9 0 -1.1419e-8 1 4.65661e-10 0 -1.11177e-8 -4.65711e-10 1 0.08407293 0 0 0 1</matrix>
+                <node id="Avatar_mSpine3" name="mSpine3" sid="mSpine3" type="JOINT">
+                  <matrix sid="transform">1 0 1.88593e-8 -0.015368 0 1 -4.65661e-10 4.90382e-10 -9.8662e-9 -4.65661e-10 1 0.2048772 0 0 0 1</matrix>
+                  <node id="Avatar_mSpine4" name="mSpine4" sid="mSpine4" type="JOINT">
+                    <matrix sid="transform">1 0 1.23691e-8 0.01536801 -1.49012e-8 1 -9.31323e-10 -1.48876e-9 -1.91503e-8 0 1 -0.2048769 0 0 0 1</matrix>
+                    <node id="Avatar_mChest" name="mChest" sid="mChest" type="JOINT">
+                      <matrix sid="transform">1 7.45058e-9 3.72529e-9 -0.01536801 -7.45058e-9 1 9.31323e-10 7.69036e-10 -2.47383e-9 9.31323e-10 1 0.2048773 0 0 0 1</matrix>
+                      <node id="Avatar_mNeck" name="mNeck" sid="mNeck" type="JOINT">
+                        <matrix sid="transform">1 0 -1.63709e-10 -0.009506997 0 1 0 3.73603e-10 -3.17232e-9 1.16415e-10 1 0.251108 0 0 0 1</matrix>
+                        <node id="Avatar_mHead" name="mHead" sid="mHead" type="JOINT">
+                          <matrix sid="transform">1 0 1.77375e-15 -1.70725e-9 0 1 0 -8.80444e-12 -2.73826e-15 7.10543e-15 1 0.07563004 0 0 0 1</matrix>
+                          <node id="Avatar_mSkull" name="mSkull" sid="mSkull" type="JOINT">
+                            <matrix sid="transform">1 0 0 -1.46777e-11 0 1 0 0 -1.80411e-15 7.10543e-15 1 0.066138 0 0 0 1</matrix>
+                            <extra>
+                              <technique profile="blender">
+                                <collections type="string">Layer 17</collections>
+                                <tip_x sid="tip_x" type="float">0</tip_x>
+                                <tip_y sid="tip_y" type="float">0</tip_y>
+                                <tip_z sid="tip_z" type="float">0.03052496</tip_z>
+                              </technique>
+                            </extra>
+                          </node>
+                          <node id="Avatar_mEyeRight" name="mEyeRight" sid="mEyeRight" type="JOINT">
+                            <matrix sid="transform">1 -1.75482e-15 0 0.09209901 -3.55271e-15 1 7.08792e-15 -0.0333 -3.58047e-15 7.10543e-15 1 0.07307479 0 0 0 1</matrix>
+                            <extra>
+                              <technique profile="blender">
+                                <collections type="string">Layer 17</collections>
+                                <tip_x sid="tip_x" type="float">0.092996</tip_x>
+                                <tip_y sid="tip_y" type="float">0</tip_y>
+                                <tip_z sid="tip_z" type="float">0</tip_z>
+                              </technique>
+                            </extra>
+                          </node>
+                          <node id="Avatar_mEyeLeft" name="mEyeLeft" sid="mEyeLeft" type="JOINT">
+                            <matrix sid="transform">1 -8.66639e-16 0 0.09209399 1.77636e-15 1 0 0.0333 -1.80411e-15 7.10543e-15 1 0.07307478 0 0 0 1</matrix>
+                            <extra>
+                              <technique profile="blender">
+                                <collections type="string">Layer 17</collections>
+                                <tip_x sid="tip_x" type="float">0.092996</tip_x>
+                                <tip_y sid="tip_y" type="float">0</tip_y>
+                                <tip_z sid="tip_z" type="float">0</tip_z>
+                              </technique>
+                            </extra>
+                          </node>
+                          <node id="Avatar_mFaceRoot" name="mFaceRoot" sid="mFaceRoot" type="JOINT">
+                            <matrix sid="transform">1 7.07295e-16 -1.88738e-15 0.023125 0 1 0 0 -3.58047e-15 7.10543e-15 1 0.04301296 0 0 0 1</matrix>
+                            <node id="Avatar_mFaceEyeAltRight" name="mFaceEyeAltRight" sid="mFaceEyeAltRight" type="JOINT">
+                              <matrix sid="transform">1 -1.049e-15 -7.10543e-15 0.068974 0 1 7.10543e-15 -0.033356 0 7.10543e-15 1 0.03139494 0 0 0 1</matrix>
+                              <extra>
+                                <technique profile="blender">
+                                  <collections type="string">Layer 24
+Layer 25</collections>
+                                  <tip_x sid="tip_x" type="float">0.02045899</tip_x>
+                                  <tip_y sid="tip_y" type="float">0</tip_y>
+                                  <tip_z sid="tip_z" type="float">0</tip_z>
+                                </technique>
+                              </extra>
+                            </node>
+                            <node id="Avatar_mFaceEyeAltLeft" name="mFaceEyeAltLeft" sid="mFaceEyeAltLeft" type="JOINT">
+                              <matrix sid="transform">1 -1.049e-15 -7.10543e-15 0.068969 0 1 7.10543e-15 0.033356 0 7.10543e-15 1 0.03139494 0 0 0 1</matrix>
+                              <extra>
+                                <technique profile="blender">
+                                  <collections type="string">Layer 24
+Layer 25</collections>
+                                  <tip_x sid="tip_x" type="float">0.02045899</tip_x>
+                                  <tip_y sid="tip_y" type="float">0</tip_y>
+                                  <tip_z sid="tip_z" type="float">0</tip_z>
+                                </technique>
+                              </extra>
+                            </node>
+                            <node id="Avatar_mFaceForeheadLeft" name="mFaceForeheadLeft" sid="mFaceForeheadLeft" type="JOINT">
+                              <matrix sid="transform">1 1.11759e-8 3.33057e-8 0.056425 -1.49012e-8 1 2.88102e-8 0.032429 -2.18497e-8 2.85469e-9 1 0.07664093 0 0 0 1</matrix>
+                              <extra>
+                                <technique profile="blender">
+                                  <collections type="string">Layer 24
+Layer 25</collections>
+                                  <roll sid="roll" type="float">-2.649697</roll>
+                                  <tip_x sid="tip_x" type="float">0.02399998</tip_x>
+                                  <tip_y sid="tip_y" type="float">0.003999948</tip_y>
+                                  <tip_z sid="tip_z" type="float">0.018</tip_z>
+                                </technique>
+                              </extra>
+                            </node>
+                            <node id="Avatar_mFaceForeheadRight" name="mFaceForeheadRight" sid="mFaceForeheadRight" type="JOINT">
+                              <matrix sid="transform">1 1.11759e-8 3.33057e-8 0.056425 -8.08231e-15 1 -1.58933e-8 -0.032429 2.28538e-8 1.03053e-8 1 0.07664093 0 0 0 1</matrix>
+                              <extra>
+                                <technique profile="blender">
+                                  <collections type="string">Layer 24
+Layer 25</collections>
+                                  <roll sid="roll" type="float">2.649697</roll>
+                                  <tip_x sid="tip_x" type="float">0.02399998</tip_x>
+                                  <tip_y sid="tip_y" type="float">-0.003999948</tip_y>
+                                  <tip_z sid="tip_z" type="float">0.018</tip_z>
+                                </technique>
+                              </extra>
+                            </node>
+                            <node id="Avatar_mFaceEyebrowOuterLeft" name="mFaceEyebrowOuterLeft" sid="mFaceEyebrowOuterLeft" type="JOINT">
+                              <matrix sid="transform">1 1.11759e-8 -1.42109e-14 0.0592 -1.05874e-14 1 7.10543e-15 0.047254 2.84217e-14 -1.77636e-15 0.9999999 0.04432188 0 0 0 1</matrix>
+                              <extra>
+                                <technique profile="blender">
+                                  <collections type="string">Layer 24
+Layer 25</collections>
+                                  <tip_x sid="tip_x" type="float">0.023</tip_x>
+                                  <tip_y sid="tip_y" type="float">0.01299995</tip_y>
+                                  <tip_z sid="tip_z" type="float">0</tip_z>
+                                </technique>
+                              </extra>
+                            </node>
+                            <node id="Avatar_mFaceEyebrowCenterLeft" name="mFaceEyebrowCenterLeft" sid="mFaceEyebrowCenterLeft" type="JOINT">
+                              <matrix sid="transform">1 -1.049e-15 -1.42109e-14 0.06474999 0 1 7.10543e-15 0.03984199 -7.10543e-15 0 1 0.05170903 0 0 0 1</matrix>
+                              <extra>
+                                <technique profile="blender">
+                                  <collections type="string">Layer 24
+Layer 25</collections>
+                                  <roll sid="roll" type="float">0</roll>
+                                  <tip_x sid="tip_x" type="float">0.02699995</tip_x>
+                                  <tip_y sid="tip_y" type="float">0</tip_y>
+                                  <tip_z sid="tip_z" type="float">0</tip_z>
+                                </technique>
+                              </extra>
+                            </node>
+                            <node id="Avatar_mFaceEyebrowInnerLeft" name="mFaceEyebrowInnerLeft" sid="mFaceEyebrowInnerLeft" type="JOINT">
+                              <matrix sid="transform">1 -1.049e-15 -7.10543e-15 0.069375 0 1 7.10543e-15 0.020384 0 7.10543e-15 1 0.04709194 0 0 0 1</matrix>
+                              <extra>
+                                <technique profile="blender">
+                                  <collections type="string">Layer 24
+Layer 25</collections>
+                                  <tip_x sid="tip_x" type="float">0.02599996</tip_x>
+                                  <tip_y sid="tip_y" type="float">0</tip_y>
+                                  <tip_z sid="tip_z" type="float">0</tip_z>
+                                </technique>
+                              </extra>
+                            </node>
+                            <node id="Avatar_mFaceEyebrowOuterRight" name="mFaceEyebrowOuterRight" sid="mFaceEyebrowOuterRight" type="JOINT">
+                              <matrix sid="transform">1 4.09782e-8 0 0.0592 -9.93731e-15 1 7.10543e-15 -0.047254 0 -3.55271e-15 0.9999999 0.04432188 0 0 0 1</matrix>
+                              <extra>
+                                <technique profile="blender">
+                                  <collections type="string">Layer 24
+Layer 25</collections>
+                                  <tip_x sid="tip_x" type="float">0.023</tip_x>
+                                  <tip_y sid="tip_y" type="float">-0.01299995</tip_y>
+                                  <tip_z sid="tip_z" type="float">0</tip_z>
+                                </technique>
+                              </extra>
+                            </node>
+                            <node id="Avatar_mFaceEyebrowCenterRight" name="mFaceEyebrowCenterRight" sid="mFaceEyebrowCenterRight" type="JOINT">
+                              <matrix sid="transform">1 -1.049e-15 -7.10543e-15 0.06474999 0 1 7.10543e-15 -0.03984199 0 7.10543e-15 1 0.05170903 0 0 0 1</matrix>
+                              <extra>
+                                <technique profile="blender">
+                                  <collections type="string">Layer 24
+Layer 25</collections>
+                                  <roll sid="roll" type="float">0</roll>
+                                  <tip_x sid="tip_x" type="float">0.02699995</tip_x>
+                                  <tip_y sid="tip_y" type="float">0</tip_y>
+                                  <tip_z sid="tip_z" type="float">0</tip_z>
+                                </technique>
+                              </extra>
+                            </node>
+                            <node id="Avatar_mFaceEyebrowInnerRight" name="mFaceEyebrowInnerRight" sid="mFaceEyebrowInnerRight" type="JOINT">
+                              <matrix sid="transform">1 -1.049e-15 -7.10543e-15 0.069375 0 1 7.10543e-15 -0.020384 0 7.10543e-15 1 0.04709194 0 0 0 1</matrix>
+                              <extra>
+                                <technique profile="blender">
+                                  <collections type="string">Layer 24
+Layer 25</collections>
+                                  <tip_x sid="tip_x" type="float">0.02599996</tip_x>
+                                  <tip_y sid="tip_y" type="float">0</tip_y>
+                                  <tip_z sid="tip_z" type="float">0</tip_z>
+                                </technique>
+                              </extra>
+                            </node>
+                            <node id="Avatar_mFaceEyeLidUpperLeft" name="mFaceEyeLidUpperLeft" sid="mFaceEyeLidUpperLeft" type="JOINT">
+                              <matrix sid="transform">1 1.34271e-14 3.50343e-9 0.067525 -6.73526e-15 1 -9.92159e-10 0.033356 7.95264e-9 2.85469e-9 1 0.03139506 0 0 0 1</matrix>
+                              <extra>
+                                <technique profile="blender">
+                                  <collections type="string">Layer 24
+Layer 25</collections>
+                                  <roll sid="roll" type="float">3.141593</roll>
+                                  <tip_x sid="tip_x" type="float">0.02699995</tip_x>
+                                  <tip_y sid="tip_y" type="float">0</tip_y>
+                                  <tip_z sid="tip_z" type="float">0.004999995</tip_z>
+                                </technique>
+                              </extra>
+                            </node>
+                            <node id="Avatar_mFaceEyeLidLowerLeft" name="mFaceEyeLidLowerLeft" sid="mFaceEyeLidLowerLeft" type="JOINT">
+                              <matrix sid="transform">1 -3.72528e-9 1.84046e-8 0.067525 -5.3882e-15 1 -9.92145e-10 0.033356 -6.94851e-9 -2.69476e-8 1 0.03139506 0 0 0 1</matrix>
+                              <extra>
+                                <technique profile="blender">
+                                  <collections type="string">Layer 24
+Layer 25</collections>
+                                  <roll sid="roll" type="float">-3.141593</roll>
+                                  <tip_x sid="tip_x" type="float">0.02399998</tip_x>
+                                  <tip_y sid="tip_y" type="float">0</tip_y>
+                                  <tip_z sid="tip_z" type="float">-0.006999969</tip_z>
+                                </technique>
+                              </extra>
+                            </node>
+                            <node id="Avatar_mFaceEyeLidUpperRight" name="mFaceEyeLidUpperRight" sid="mFaceEyeLidUpperRight" type="JOINT">
+                              <matrix sid="transform">1 1.48116e-14 3.50343e-9 0.067525 -5.3882e-15 1 -9.92159e-10 -0.033356 -6.94851e-9 1.77558e-8 1 0.03139506 0 0 0 1</matrix>
+                              <extra>
+                                <technique profile="blender">
+                                  <collections type="string">Layer 24
+Layer 25</collections>
+                                  <roll sid="roll" type="float">3.141593</roll>
+                                  <tip_x sid="tip_x" type="float">0.02699995</tip_x>
+                                  <tip_y sid="tip_y" type="float">0</tip_y>
+                                  <tip_z sid="tip_z" type="float">0.004999995</tip_z>
+                                </technique>
+                              </extra>
+                            </node>
+                            <node id="Avatar_mFaceEyeLidLowerRight" name="mFaceEyeLidLowerRight" sid="mFaceEyeLidLowerRight" type="JOINT">
+                              <matrix sid="transform">1 -3.72528e-9 1.84046e-8 0.067525 -7.45059e-9 1 -9.92145e-10 -0.033356 -6.94851e-9 2.85469e-9 1 0.03139506 0 0 0 1</matrix>
+                              <extra>
+                                <technique profile="blender">
+                                  <collections type="string">Layer 24
+Layer 25</collections>
+                                  <roll sid="roll" type="float">-3.141593</roll>
+                                  <tip_x sid="tip_x" type="float">0.02399998</tip_x>
+                                  <tip_y sid="tip_y" type="float">0</tip_y>
+                                  <tip_z sid="tip_z" type="float">-0.006999969</tip_z>
+                                </technique>
+                              </extra>
+                            </node>
+                            <node id="Avatar_mFaceEar1Left" name="mFaceEar1Left" sid="mFaceEar1Left" type="JOINT">
+                              <matrix sid="transform">0.9999999 -5.58793e-9 4.91382e-8 -3.99899e-10 3.72529e-9 0.9999999 -3.07945e-8 0.07412399 -1.53304e-8 -2.69476e-8 1 0.001845955 0 0 0 1</matrix>
+                              <node id="Avatar_mFaceEar2Left" name="mFaceEar2Left" sid="mFaceEar2Left" type="JOINT">
+                                <matrix sid="transform">0.9999999 -5.58794e-9 -2.79397e-9 -0.01899992 1.86265e-8 0.9999999 -2.98023e-8 0.01799998 2.79397e-8 2.98023e-8 0.9999999 0.02500009 0 0 0 1</matrix>
+                                <extra>
+                                  <technique profile="blender">
+                                    <connect sid="connect" type="bool">1</connect>
+                                    <collections type="string">Layer 24
+Layer 25</collections>
+                                    <tip_x sid="tip_x" type="float">0</tip_x>
+                                    <tip_y sid="tip_y" type="float">0</tip_y>
+                                    <tip_z sid="tip_z" type="float">0.03299999</tip_z>
+                                  </technique>
+                                </extra>
+                              </node>
+                              <extra>
+                                <technique profile="blender">
+                                  <collections type="string">Layer 24
+Layer 25</collections>
+                                  <roll sid="roll" type="float">-0.316785</roll>
+                                </technique>
+                              </extra>
+                            </node>
+                            <node id="Avatar_mFaceEar1Right" name="mFaceEar1Right" sid="mFaceEar1Right" type="JOINT">
+                              <matrix sid="transform">1 1.11759e-8 3.50342e-9 8.59331e-10 2.98023e-8 1 -9.92145e-10 -0.07412399 -3.67508e-8 4.75582e-8 1 0.001845955 0 0 0 1</matrix>
+                              <node id="Avatar_mFaceEar2Right" name="mFaceEar2Right" sid="mFaceEar2Right" type="JOINT">
+                                <matrix sid="transform">1 0 -4.47035e-8 -0.01900002 0 0.9999999 -4.47035e-8 -0.0180001 1.49012e-8 2.98023e-8 1 0.02500026 0 0 0 1</matrix>
+                                <extra>
+                                  <technique profile="blender">
+                                    <connect sid="connect" type="bool">1</connect>
+                                    <collections type="string">Layer 24
+Layer 25</collections>
+                                    <tip_x sid="tip_x" type="float">0</tip_x>
+                                    <tip_y sid="tip_y" type="float">0</tip_y>
+                                    <tip_z sid="tip_z" type="float">0.03299999</tip_z>
+                                  </technique>
+                                </extra>
+                              </node>
+                              <extra>
+                                <technique profile="blender">
+                                  <collections type="string">Layer 24
+Layer 25</collections>
+                                  <roll sid="roll" type="float">0.316785</roll>
+                                </technique>
+                              </extra>
+                            </node>
+                            <node id="Avatar_mFaceNoseLeft" name="mFaceNoseLeft" sid="mFaceNoseLeft" type="JOINT">
+                              <matrix sid="transform">1 -3.72529e-9 -7.10543e-15 0.07955001 1.49012e-8 1 7.10543e-15 0.013898 0 -1.42109e-14 1 -0.003694056 0 0 0 1</matrix>
+                              <extra>
+                                <technique profile="blender">
+                                  <collections type="string">Layer 24
+Layer 25</collections>
+                                  <tip_x sid="tip_x" type="float">0.01499998</tip_x>
+                                  <tip_y sid="tip_y" type="float">0.003999948</tip_y>
+                                  <tip_z sid="tip_z" type="float">0</tip_z>
+                                </technique>
+                              </extra>
+                            </node>
+                            <node id="Avatar_mFaceNoseCenter" name="mFaceNoseCenter" sid="mFaceNoseCenter" type="JOINT">
+                              <matrix sid="transform">1 -1.049e-15 -7.10543e-15 0.09435 0 1 7.10543e-15 -3.73312e-15 0 7.10543e-15 1 -0.001356005 0 0 0 1</matrix>
+                              <extra>
+                                <technique profile="blender">
+                                  <collections type="string">Layer 24
+Layer 25</collections>
+                                  <tip_x sid="tip_x" type="float">0.02394896</tip_x>
+                                  <tip_y sid="tip_y" type="float">0</tip_y>
+                                  <tip_z sid="tip_z" type="float">0</tip_z>
+                                </technique>
+                              </extra>
+                            </node>
+                            <node id="Avatar_mFaceNoseRight" name="mFaceNoseRight" sid="mFaceNoseRight" type="JOINT">
+                              <matrix sid="transform">1 2.6077e-8 -1.42109e-14 0.07955001 -1.49012e-8 1 7.10543e-15 -0.013898 7.10543e-15 -8.88178e-15 1 -0.003694056 0 0 0 1</matrix>
+                              <extra>
+                                <technique profile="blender">
+                                  <collections type="string">Layer 24
+Layer 25</collections>
+                                  <tip_x sid="tip_x" type="float">0.01499998</tip_x>
+                                  <tip_y sid="tip_y" type="float">-0.003999948</tip_y>
+                                  <tip_z sid="tip_z" type="float">0</tip_z>
+                                </technique>
+                              </extra>
+                            </node>
+                            <node id="Avatar_mFaceCheekLowerLeft" name="mFaceCheekLowerLeft" sid="mFaceCheekLowerLeft" type="JOINT">
+                              <matrix sid="transform">1 4.09782e-8 -7.10543e-15 0.04625 -2.98023e-8 1 7.10543e-15 0.031503 1.42109e-14 1.77636e-15 1 -0.028625 0 0 0 1</matrix>
+                              <extra>
+                                <technique profile="blender">
+                                  <collections type="string">Layer 24
+Layer 25</collections>
+                                  <tip_x sid="tip_x" type="float">0.01299995</tip_x>
+                                  <tip_y sid="tip_y" type="float">0.02999997</tip_y>
+                                  <tip_z sid="tip_z" type="float">0</tip_z>
+                                </technique>
+                              </extra>
+                            </node>
+                            <node id="Avatar_mFaceCheekUpperLeft" name="mFaceCheekUpperLeft" sid="mFaceCheekUpperLeft" type="JOINT">
+                              <matrix sid="transform">1 1.11759e-8 0 0.06475001 -2.98023e-8 1 7.10543e-15 0.031503 7.10543e-15 1.77636e-15 1 -0.004616974 0 0 0 1</matrix>
+                              <extra>
+                                <technique profile="blender">
+                                  <collections type="string">Layer 24
+Layer 25</collections>
+                                  <tip_x sid="tip_x" type="float">0.02199995</tip_x>
+                                  <tip_y sid="tip_y" type="float">0.01499998</tip_y>
+                                  <tip_z sid="tip_z" type="float">0</tip_z>
+                                </technique>
+                              </extra>
+                            </node>
+                            <node id="Avatar_mFaceCheekLowerRight" name="mFaceCheekLowerRight" sid="mFaceCheekLowerRight" type="JOINT">
+                              <matrix sid="transform">1 -1.86264e-8 -1.42109e-14 0.04625 2.98023e-8 1 0 -0.031503 -7.10543e-15 -3.55271e-15 1 -0.028625 0 0 0 1</matrix>
+                              <extra>
+                                <technique profile="blender">
+                                  <collections type="string">Layer 24
+Layer 25</collections>
+                                  <tip_x sid="tip_x" type="float">0.01299995</tip_x>
+                                  <tip_y sid="tip_y" type="float">-0.02999997</tip_y>
+                                  <tip_z sid="tip_z" type="float">0</tip_z>
+                                </technique>
+                              </extra>
+                            </node>
+                            <node id="Avatar_mFaceCheekUpperRight" name="mFaceCheekUpperRight" sid="mFaceCheekUpperRight" type="JOINT">
+                              <matrix sid="transform">1 -4.84288e-8 -1.42109e-14 0.06475001 2.98023e-8 1 1.42109e-14 -0.031503 -7.10543e-15 -8.88178e-15 1 -0.004616974 0 0 0 1</matrix>
+                              <extra>
+                                <technique profile="blender">
+                                  <collections type="string">Layer 24
+Layer 25</collections>
+                                  <tip_x sid="tip_x" type="float">0.02199995</tip_x>
+                                  <tip_y sid="tip_y" type="float">-0.01499998</tip_y>
+                                  <tip_z sid="tip_z" type="float">0</tip_z>
+                                </technique>
+                              </extra>
+                            </node>
+                            <node id="Avatar_mFaceJaw" name="mFaceJaw" sid="mFaceJaw" type="JOINT">
+                              <matrix sid="transform">1 1.11759e-8 -2.62989e-8 -9.25e-4 -1.07764e-14 1 2.88102e-8 -2.77556e-15 5.26561e-8 6.24593e-8 1 -0.01356112 0 0 0 1</matrix>
+                              <node id="Avatar_mFaceChin" name="mFaceChin" sid="mFaceChin" type="JOINT">
+                                <matrix sid="transform">1 2.98023e-8 0 0.06428697 0 1 -2.98023e-8 6.03031e-8 -2.98023e-8 5.96046e-8 1 -0.0513368 0 0 0 1</matrix>
+                                <extra>
+                                  <technique profile="blender">
+                                    <collections type="string">Layer 24
+Layer 25</collections>
+                                    <roll sid="roll" type="float">3.141593</roll>
+                                    <tip_x sid="tip_x" type="float">0.02099996</tip_x>
+                                    <tip_y sid="tip_y" type="float">0</tip_y>
+                                    <tip_z sid="tip_z" type="float">-0.018</tip_z>
+                                  </technique>
+                                </extra>
+                              </node>
+                              <node id="Avatar_mFaceTeethLower" name="mFaceTeethLower" sid="mFaceTeethLower" type="JOINT">
+                                <matrix sid="transform">1 2.98023e-8 0 0.01942498 2.98023e-8 1 0 9.12696e-8 2.98023e-8 5.96046e-8 1 -0.03776669 0 0 0 1</matrix>
+                                <node id="Avatar_mFaceLipLowerLeft" name="mFaceLipLowerLeft" sid="mFaceLipLowerLeft" type="JOINT">
+                                  <matrix sid="transform">1 -7.45063e-9 1.7053e-13 0.04162501 3.72529e-8 1 -1.42109e-13 1.15841e-14 3.90799e-14 7.10543e-14 1 -9.98378e-10 0 0 0 1</matrix>
+                                  <extra>
+                                    <technique profile="blender">
+                                      <collections type="string">Layer 24
+Layer 25</collections>
+                                      <roll sid="roll" type="float">-0.541183</roll>
+                                      <tip_x sid="tip_x" type="float">0.03144997</tip_x>
+                                      <tip_y sid="tip_y" type="float">0.01572495</tip_y>
+                                      <tip_z sid="tip_z" type="float">0.004624962</tip_z>
+                                    </technique>
+                                  </extra>
+                                </node>
+                                <node id="Avatar_mFaceLipLowerRight" name="mFaceLipLowerRight" sid="mFaceLipLowerRight" type="JOINT">
+                                  <matrix sid="transform">0.9999999 -4.47035e-8 1.7053e-13 0.04162501 -1.49011e-8 0.9999999 2.98022e-8 1.15841e-14 1.77636e-14 5.96047e-8 1 -9.98378e-10 0 0 0 1</matrix>
+                                  <extra>
+                                    <technique profile="blender">
+                                      <collections type="string">Layer 24
+Layer 25</collections>
+                                      <roll sid="roll" type="float">0.541183</roll>
+                                      <tip_x sid="tip_x" type="float">0.03144997</tip_x>
+                                      <tip_y sid="tip_y" type="float">-0.01572495</tip_y>
+                                      <tip_z sid="tip_z" type="float">0.004624962</tip_z>
+                                    </technique>
+                                  </extra>
+                                </node>
+                                <node id="Avatar_mFaceLipLowerCenter" name="mFaceLipLowerCenter" sid="mFaceLipLowerCenter" type="JOINT">
+                                  <matrix sid="transform">1 -2.32889e-10 1.7053e-13 0.04162501 1.88738e-14 0.9999999 -1.42109e-13 1.15841e-14 -3.72526e-9 -3.72523e-9 1 -9.98378e-10 0 0 0 1</matrix>
+                                  <extra>
+                                    <technique profile="blender">
+                                      <collections type="string">Layer 24
+Layer 25</collections>
+                                      <roll sid="roll" type="float">3.141589</roll>
+                                      <tip_x sid="tip_x" type="float">0.037</tip_x>
+                                      <tip_y sid="tip_y" type="float">0</tip_y>
+                                      <tip_z sid="tip_z" type="float">0.001850008</tip_z>
+                                    </technique>
+                                  </extra>
+                                </node>
+                                <node id="Avatar_mFaceTongueBase" name="mFaceTongueBase" sid="mFaceTongueBase" type="JOINT">
+                                  <matrix sid="transform">1 -1.49012e-8 1.7053e-13 0.036075 8.88178e-15 1 -1.42109e-13 2.57572e-14 2.98023e-8 2.98024e-8 1 0.004625079 0 0 0 1</matrix>
+                                  <node id="Avatar_mFaceTongueTip" name="mFaceTongueTip" sid="mFaceTongueTip" type="JOINT">
+                                    <matrix sid="transform">1 0 0 0.02035006 -7.45058e-9 1 2.98023e-8 -2.52137e-9 -2.98023e-8 2.98023e-8 1 0.006474883 0 0 0 1</matrix>
+                                    <extra>
+                                      <technique profile="blender">
+                                        <connect sid="connect" type="bool">1</connect>
+                                        <collections type="string">Layer 24
+Layer 25</collections>
+                                        <tip_x sid="tip_x" type="float">0.009249985</tip_x>
+                                        <tip_y sid="tip_y" type="float">0</tip_y>
+                                        <tip_z sid="tip_z" type="float">0</tip_z>
+                                      </technique>
+                                    </extra>
+                                  </node>
+                                  <extra>
+                                    <technique profile="blender">
+                                      <collections type="string">Layer 24
+Layer 25</collections>
+                                      <roll sid="roll" type="float">3.141593</roll>
+                                    </technique>
+                                  </extra>
+                                </node>
+                                <extra>
+                                  <technique profile="blender">
+                                    <collections type="string">Layer 24
+Layer 25</collections>
+                                    <tip_x sid="tip_x" type="float">0.03499996</tip_x>
+                                    <tip_y sid="tip_y" type="float">0</tip_y>
+                                    <tip_z sid="tip_z" type="float">0</tip_z>
+                                  </technique>
+                                </extra>
+                              </node>
+                              <extra>
+                                <technique profile="blender">
+                                  <collections type="string">Layer 24
+Layer 25</collections>
+                                  <roll sid="roll" type="float">-3.141593</roll>
+                                  <tip_x sid="tip_x" type="float">0.05457496</tip_x>
+                                  <tip_y sid="tip_y" type="float">0</tip_y>
+                                  <tip_z sid="tip_z" type="float">-0.03607499</tip_z>
+                                </technique>
+                              </extra>
+                            </node>
+                            <node id="Avatar_mFaceJawShaper" name="mFaceJawShaper" sid="mFaceJawShaper" type="JOINT">
+                              <matrix sid="transform">1 -4.60171e-15 -7.10543e-15 1.16415e-10 0 1 7.10543e-15 -2.48747e-15 0 7.10543e-15 1 -1.16468e-10 0 0 0 1</matrix>
+                              <extra>
+                                <technique profile="blender">
+                                  <collections type="string">Layer 24
+Layer 25</collections>
+                                  <tip_x sid="tip_x" type="float">-0.01572495</tip_x>
+                                  <tip_y sid="tip_y" type="float">0</tip_y>
+                                  <tip_z sid="tip_z" type="float">0</tip_z>
+                                </technique>
+                              </extra>
+                            </node>
+                            <node id="Avatar_mFaceForeheadCenter" name="mFaceForeheadCenter" sid="mFaceForeheadCenter" type="JOINT">
+                              <matrix sid="transform">1 -1.049e-15 -7.10543e-15 0.063825 0 1 7.10543e-15 -4.44089e-15 0 7.10543e-15 1 0.06001994 0 0 0 1</matrix>
+                              <extra>
+                                <technique profile="blender">
+                                  <collections type="string">Layer 24
+Layer 25</collections>
+                                  <tip_x sid="tip_x" type="float">0.03599995</tip_x>
+                                  <tip_y sid="tip_y" type="float">0</tip_y>
+                                  <tip_z sid="tip_z" type="float">0</tip_z>
+                                </technique>
+                              </extra>
+                            </node>
+                            <node id="Avatar_mFaceNoseBase" name="mFaceNoseBase" sid="mFaceNoseBase" type="JOINT">
+                              <matrix sid="transform">1 -1.049e-15 0 0.08695 0 1 7.10543e-15 -8.10463e-15 0 0 1 -0.01662099 0 0 0 1</matrix>
+                              <extra>
+                                <technique profile="blender">
+                                  <collections type="string">Layer 24
+Layer 25</collections>
+                                  <tip_x sid="tip_x" type="float">0.01399999</tip_x>
+                                  <tip_y sid="tip_y" type="float">0</tip_y>
+                                  <tip_z sid="tip_z" type="float">0</tip_z>
+                                </technique>
+                              </extra>
+                            </node>
+                            <node id="Avatar_mFaceTeethUpper" name="mFaceTeethUpper" sid="mFaceTeethUpper" type="JOINT">
+                              <matrix sid="transform">1 -1.049e-15 -7.10543e-15 0.0185 0 1 7.10543e-15 -7.10543e-15 0 7.10543e-15 1 -0.02770196 0 0 0 1</matrix>
+                              <node id="Avatar_mFaceLipUpperLeft" name="mFaceLipUpperLeft" sid="mFaceLipUpperLeft" type="JOINT">
+                                <matrix sid="transform">1 1.11759e-8 -3.55271e-15 0.041625 1.8518e-15 1 -4.44072e-16 0 7.10543e-15 -1.42109e-14 1 -0.003754018 0 0 0 1</matrix>
+                                <extra>
+                                  <technique profile="blender">
+                                    <collections type="string">Layer 24
+Layer 25</collections>
+                                    <tip_x sid="tip_x" type="float">0.037925</tip_x>
+                                    <tip_y sid="tip_y" type="float">0.01387494</tip_y>
+                                    <tip_z sid="tip_z" type="float">0</tip_z>
+                                  </technique>
+                                </extra>
+                              </node>
+                              <node id="Avatar_mFaceLipUpperRight" name="mFaceLipUpperRight" sid="mFaceLipUpperRight" type="JOINT">
+                                <matrix sid="transform">1 1.11759e-8 -3.55271e-15 0.041625 9.04939e-16 1 1.77637e-15 0 -3.55271e-15 -1.42109e-14 1 -0.003754018 0 0 0 1</matrix>
+                                <extra>
+                                  <technique profile="blender">
+                                    <collections type="string">Layer 24
+Layer 25</collections>
+                                    <tip_x sid="tip_x" type="float">0.037925</tip_x>
+                                    <tip_y sid="tip_y" type="float">-0.01387494</tip_y>
+                                    <tip_z sid="tip_z" type="float">0</tip_z>
+                                  </technique>
+                                </extra>
+                              </node>
+                              <node id="Avatar_mFaceLipCornerLeft" name="mFaceLipCornerLeft" sid="mFaceLipCornerLeft" type="JOINT">
+                                <matrix sid="transform">1 4.09782e-8 0 0.0259 -5.96046e-8 1 3.55273e-15 -0.017575 5.32907e-15 7.10543e-15 1 -0.009250041 0 0 0 1</matrix>
+                                <extra>
+                                  <technique profile="blender">
+                                    <collections type="string">Layer 24
+Layer 25</collections>
+                                    <roll sid="roll" type="float">0</roll>
+                                    <tip_x sid="tip_x" type="float">0.04162496</tip_x>
+                                    <tip_y sid="tip_y" type="float">0.04717499</tip_y>
+                                    <tip_z sid="tip_z" type="float">0</tip_z>
+                                  </technique>
+                                </extra>
+                              </node>
+                              <node id="Avatar_mFaceLipCornerRight" name="mFaceLipCornerRight" sid="mFaceLipCornerRight" type="JOINT">
+                                <matrix sid="transform">1 -4.84288e-8 -1.42109e-14 0.0259 5.96046e-8 1 7.10544e-15 0.017575 -7.10543e-15 7.10543e-15 0.9999999 -0.009250041 0 0 0 1</matrix>
+                                <extra>
+                                  <technique profile="blender">
+                                    <collections type="string">Layer 24
+Layer 25</collections>
+                                    <roll sid="roll" type="float">0</roll>
+                                    <tip_x sid="tip_x" type="float">0.04162496</tip_x>
+                                    <tip_y sid="tip_y" type="float">-0.04717499</tip_y>
+                                    <tip_z sid="tip_z" type="float">0</tip_z>
+                                  </technique>
+                                </extra>
+                              </node>
+                              <node id="Avatar_mFaceLipUpperCenter" name="mFaceLipUpperCenter" sid="mFaceLipUpperCenter" type="JOINT">
+                                <matrix sid="transform">0.9999999 4.58378e-15 -1.28627e-9 0.041625 1.53323e-15 1 3.55272e-14 0 -5.88414e-9 -1.86274e-9 1 -0.002448915 0 0 0 1</matrix>
+                                <extra>
+                                  <technique profile="blender">
+                                    <collections type="string">Layer 24
+Layer 25</collections>
+                                    <roll sid="roll" type="float">3.14159</roll>
+                                    <tip_x sid="tip_x" type="float">0.03977495</tip_x>
+                                    <tip_y sid="tip_y" type="float">0</tip_y>
+                                    <tip_z sid="tip_z" type="float">0.001921057</tip_z>
+                                  </technique>
+                                </extra>
+                              </node>
+                              <extra>
+                                <technique profile="blender">
+                                  <collections type="string">Layer 24
+Layer 25</collections>
+                                  <tip_x sid="tip_x" type="float">0.03499996</tip_x>
+                                  <tip_y sid="tip_y" type="float">0</tip_y>
+                                  <tip_z sid="tip_z" type="float">0</tip_z>
+                                </technique>
+                              </extra>
+                            </node>
+                            <node id="Avatar_mFaceEyecornerInnerLeft" name="mFaceEyecornerInnerLeft" sid="mFaceEyecornerInnerLeft" type="JOINT">
+                              <matrix sid="transform">1 -1.049e-15 -1.42109e-14 0.06937499 0 1 7.10543e-15 0.015751 0 0 1 0.02954804 0 0 0 1</matrix>
+                              <extra>
+                                <technique profile="blender">
+                                  <collections type="string">Layer 24
+Layer 25</collections>
+                                  <tip_x sid="tip_x" type="float">0.01599997</tip_x>
+                                  <tip_y sid="tip_y" type="float">0</tip_y>
+                                  <tip_z sid="tip_z" type="float">0</tip_z>
+                                </technique>
+                              </extra>
+                            </node>
+                            <node id="Avatar_mFaceEyecornerInnerRight" name="mFaceEyecornerInnerRight" sid="mFaceEyecornerInnerRight" type="JOINT">
+                              <matrix sid="transform">1 -1.049e-15 -7.10543e-15 0.06937499 0 1 7.10543e-15 -0.015751 0 7.10543e-15 1 0.02954804 0 0 0 1</matrix>
+                              <extra>
+                                <technique profile="blender">
+                                  <collections type="string">Layer 24
+Layer 25</collections>
+                                  <tip_x sid="tip_x" type="float">0.01599997</tip_x>
+                                  <tip_y sid="tip_y" type="float">0</tip_y>
+                                  <tip_z sid="tip_z" type="float">0</tip_z>
+                                </technique>
+                              </extra>
+                            </node>
+                            <node id="Avatar_mFaceNoseBridge" name="mFaceNoseBridge" sid="mFaceNoseBridge" type="JOINT">
+                              <matrix sid="transform">0.9999999 1.11759e-8 6.31081e-8 0.08417499 1.49012e-8 1 -3.07945e-8 1.66533e-15 -6.9485e-9 2.85468e-9 1 0.01807999 0 0 0 1</matrix>
+                              <extra>
+                                <technique profile="blender">
+                                  <collections type="string">Layer 24
+Layer 25</collections>
+                                  <roll sid="roll" type="float">3.141593</roll>
+                                  <tip_x sid="tip_x" type="float">0.01387494</tip_x>
+                                  <tip_y sid="tip_y" type="float">0</tip_y>
+                                  <tip_z sid="tip_z" type="float">0.007400035</tip_z>
+                                </technique>
+                              </extra>
+                            </node>
+                            <extra>
+                              <technique profile="blender">
+                                <collections type="string">Layer 24
+Layer 25</collections>
+                                <tip_x sid="tip_x" type="float">0.01999998</tip_x>
+                                <tip_y sid="tip_y" type="float">0</tip_y>
+                                <tip_z sid="tip_z" type="float">0</tip_z>
+                              </technique>
+                            </extra>
+                          </node>
+                          <extra>
+                            <technique profile="blender">
+                              <connect sid="connect" type="bool">1</connect>
+                              <collections type="string">Layer 17</collections>
+                              <tip_x sid="tip_x" type="float">0</tip_x>
+                              <tip_y sid="tip_y" type="float">0</tip_y>
+                              <tip_z sid="tip_z" type="float">0.07307505</tip_z>
+                            </technique>
+                          </extra>
+                        </node>
+                        <extra>
+                          <technique profile="blender">
+                            <connect sid="connect" type="bool">1</connect>
+                            <collections type="string">Layer 17</collections>
+                          </technique>
+                        </extra>
+                      </node>
+                      <node id="Avatar_mCollarLeft" name="mCollarLeft" sid="mCollarLeft" type="JOINT">
+                        <matrix sid="transform">1 0 -1.63709e-10 -0.020718 0 1 0 0.07167801 -3.17232e-9 1.16415e-10 1 0.1653961 0 0 0 1</matrix>
+                        <node id="Avatar_mShoulderLeft" name="mShoulderLeft" sid="mShoulderLeft" type="JOINT">
+                          <matrix sid="transform">1 0 0 -8.82894e-10 0 1 0 0.07900001 0 0 1 2.67039e-9 0 0 0 1</matrix>
+                          <node id="Avatar_mElbowLeft" name="mElbowLeft" sid="mElbowLeft" type="JOINT">
+                            <matrix sid="transform">1 0 0 0 -5.08327e-16 1 7.10543e-15 0.27776 -1.77636e-15 0 1 9.03207e-10 0 0 0 1</matrix>
+                            <node id="Avatar_mWristLeft" name="mWristLeft" sid="mWristLeft" type="JOINT">
+                              <matrix sid="transform">1 0 0 3.72529e-9 -5.08327e-16 1 1.42109e-14 0.241719 -3.55271e-15 0 1 9.03207e-10 0 0 0 1</matrix>
+                              <node id="Avatar_mHandMiddle1Left" name="mHandMiddle1Left" sid="mHandMiddle1Left" type="JOINT">
+                                <matrix sid="transform">1 1.86265e-9 0 0.013 1.86265e-9 1 3.25958e-9 0.1010001 2.50293e-8 0 1 0.01499998 0 0 0 1</matrix>
+                                <node id="Avatar_mHandMiddle2Left" name="mHandMiddle2Left" sid="mHandMiddle2Left" type="JOINT">
+                                  <matrix sid="transform">1 -1.86265e-9 -2.98023e-8 -0.001000007 1.86265e-9 1 -1.49012e-8 0.04000004 0 1.49012e-8 1 -0.005999802 0 0 0 1</matrix>
+                                  <node id="Avatar_mHandMiddle3Left" name="mHandMiddle3Left" sid="mHandMiddle3Left" type="JOINT">
+                                    <matrix sid="transform">1 1.86265e-9 -1.49012e-8 -0.001000027 5.58794e-9 1 0 0.04899992 1.49012e-8 -1.49012e-8 1 -0.008000066 0 0 0 1</matrix>
+                                    <extra>
+                                      <technique profile="blender">
+                                        <connect sid="connect" type="bool">1</connect>
+                                        <collections type="string">Layer 24
+Layer 26</collections>
+                                        <roll sid="roll" type="float">0.169034</roll>
+                                        <tip_x sid="tip_x" type="float">-0.001999974</tip_x>
+                                        <tip_y sid="tip_y" type="float">0.03299999</tip_y>
+                                        <tip_z sid="tip_z" type="float">-0.006000041</tip_z>
+                                      </technique>
+                                    </extra>
+                                  </node>
+                                  <extra>
+                                    <technique profile="blender">
+                                      <connect sid="connect" type="bool">1</connect>
+                                      <collections type="string">Layer 24
+Layer 26</collections>
+                                      <roll sid="roll" type="float">0.15855</roll>
+                                    </technique>
+                                  </extra>
+                                </node>
+                                <extra>
+                                  <technique profile="blender">
+                                    <collections type="string">Layer 24
+Layer 26</collections>
+                                    <roll sid="roll" type="float">0.145182</roll>
+                                  </technique>
+                                </extra>
+                              </node>
+                              <node id="Avatar_mHandIndex1Left" name="mHandIndex1Left" sid="mHandIndex1Left" type="JOINT">
+                                <matrix sid="transform">1 -2.79397e-8 1.49012e-8 0.038 1.39698e-8 1 -4.19102e-9 0.09700006 1.01281e-8 -1.11759e-8 1 0.01499998 0 0 0 1</matrix>
+                                <node id="Avatar_mHandIndex2Left" name="mHandIndex2Left" sid="mHandIndex2Left" type="JOINT">
+                                  <matrix sid="transform">1 -5.4948e-8 2.98023e-8 0.01699998 1.21072e-8 1 7.45058e-9 0.03600001 0 1.86265e-8 1 -0.005999843 0 0 0 1</matrix>
+                                  <node id="Avatar_mHandIndex3Left" name="mHandIndex3Left" sid="mHandIndex3Left" type="JOINT">
+                                    <matrix sid="transform">0.9999999 1.86265e-8 0 0.01399993 1.86265e-8 1 -3.35276e-8 0.03199996 -2.98023e-8 7.45058e-9 1 -0.005999951 0 0 0 1</matrix>
+                                    <extra>
+                                      <technique profile="blender">
+                                        <connect sid="connect" type="bool">1</connect>
+                                        <collections type="string">Layer 24
+Layer 26</collections>
+                                        <roll sid="roll" type="float">0.222322</roll>
+                                        <tip_x sid="tip_x" type="float">0.01099997</tip_x>
+                                        <tip_y sid="tip_y" type="float">0.02499997</tip_y>
+                                        <tip_z sid="tip_z" type="float">-0.003999948</tip_z>
+                                      </technique>
+                                    </extra>
+                                  </node>
+                                  <extra>
+                                    <technique profile="blender">
+                                      <connect sid="connect" type="bool">1</connect>
+                                      <collections type="string">Layer 24
+Layer 26</collections>
+                                      <roll sid="roll" type="float">0.259285</roll>
+                                    </technique>
+                                  </extra>
+                                </node>
+                                <extra>
+                                  <technique profile="blender">
+                                    <collections type="string">Layer 24
+Layer 26</collections>
+                                    <roll sid="roll" type="float">0.235404</roll>
+                                  </technique>
+                                </extra>
+                              </node>
+                              <node id="Avatar_mHandRing1Left" name="mHandRing1Left" sid="mHandRing1Left" type="JOINT">
+                                <matrix sid="transform">1 1.67638e-8 1.49012e-8 -0.009999994 5.02914e-8 1 1.81607e-8 0.09900003 -2.71248e-8 1.49012e-8 1 0.009000061 0 0 0 1</matrix>
+                                <node id="Avatar_mHandRing2Left" name="mHandRing2Left" sid="mHandRing2Left" type="JOINT">
+                                  <matrix sid="transform">1 1.67638e-8 2.23517e-8 -0.01299997 -3.91155e-8 1 0 0.03800007 -2.98023e-8 0 1 -0.008000007 0 0 0 1</matrix>
+                                  <node id="Avatar_mHandRing3Left" name="mHandRing3Left" sid="mHandRing3Left" type="JOINT">
+                                    <matrix sid="transform">1 2.98023e-8 7.45058e-9 -0.013 -7.82311e-8 1 -1.49012e-8 0.03999989 2.98023e-8 2.98023e-8 1 -0.009000105 0 0 0 1</matrix>
+                                    <extra>
+                                      <technique profile="blender">
+                                        <connect sid="connect" type="bool">1</connect>
+                                        <collections type="string">Layer 24
+Layer 26</collections>
+                                        <roll sid="roll" type="float">0.1405619</roll>
+                                        <tip_x sid="tip_x" type="float">-0.00999999</tip_x>
+                                        <tip_y sid="tip_y" type="float">0.02799999</tip_y>
+                                        <tip_z sid="tip_z" type="float">-0.006000041</tip_z>
+                                      </technique>
+                                    </extra>
+                                  </node>
+                                  <extra>
+                                    <technique profile="blender">
+                                      <connect sid="connect" type="bool">1</connect>
+                                      <collections type="string">Layer 24
+Layer 26</collections>
+                                      <roll sid="roll" type="float">0.153414</roll>
+                                    </technique>
+                                  </extra>
+                                </node>
+                                <extra>
+                                  <technique profile="blender">
+                                    <collections type="string">Layer 24
+Layer 26</collections>
+                                    <roll sid="roll" type="float">0.1407639</roll>
+                                  </technique>
+                                </extra>
+                              </node>
+                              <node id="Avatar_mHandPinky1Left" name="mHandPinky1Left" sid="mHandPinky1Left" type="JOINT">
+                                <matrix sid="transform">1 -1.49012e-8 1.02445e-8 -0.031 2.25846e-8 1 3.30619e-8 0.09499996 2.67756e-9 1.49012e-8 1 0.003000021 0 0 0 1</matrix>
+                                <node id="Avatar_mHandPinky2Left" name="mHandPinky2Left" sid="mHandPinky2Left" type="JOINT">
+                                  <matrix sid="transform">0.9999999 -7.49715e-8 7.45058e-9 -0.02400001 1.0943e-8 1 4.47035e-8 0.02500011 -1.95578e-8 1.49012e-8 1 -0.005999999 0 0 0 1</matrix>
+                                  <node id="Avatar_mHandPinky3Left" name="mHandPinky3Left" sid="mHandPinky3Left" type="JOINT">
+                                    <matrix sid="transform">1 -2.89583e-8 -1.07102e-8 -0.01500007 -3.72529e-9 1 0 0.01800002 5.93718e-9 0 1 -0.004000043 0 0 0 1</matrix>
+                                    <extra>
+                                      <technique profile="blender">
+                                        <connect sid="connect" type="bool">1</connect>
+                                        <collections type="string">Layer 24
+Layer 26</collections>
+                                        <roll sid="roll" type="float">0.09143495</roll>
+                                        <tip_x sid="tip_x" type="float">-0.01299995</tip_x>
+                                        <tip_y sid="tip_y" type="float">0.01599997</tip_y>
+                                        <tip_z sid="tip_z" type="float">-0.003999948</tip_z>
+                                      </technique>
+                                    </extra>
+                                  </node>
+                                  <extra>
+                                    <technique profile="blender">
+                                      <connect sid="connect" type="bool">1</connect>
+                                      <collections type="string">Layer 24
+Layer 26</collections>
+                                      <roll sid="roll" type="float">0.07934099</roll>
+                                    </technique>
+                                  </extra>
+                                </node>
+                                <extra>
+                                  <technique profile="blender">
+                                    <collections type="string">Layer 24
+Layer 26</collections>
+                                    <roll sid="roll" type="float">0.07321596</roll>
+                                  </technique>
+                                </extra>
+                              </node>
+                              <node id="Avatar_mHandThumb1Left" name="mHandThumb1Left" sid="mHandThumb1Left" type="JOINT">
+                                <matrix sid="transform">1 0 -2.98023e-8 0.031 4.09782e-8 1 3.25958e-9 0.02599996 5.48316e-8 0 1 0.003999948 0 0 0 1</matrix>
+                                <node id="Avatar_mHandThumb2Left" name="mHandThumb2Left" sid="mHandThumb2Left" type="JOINT">
+                                  <matrix sid="transform">0.9999999 0 -2.98023e-8 0.02799989 -5.96046e-8 1 0 0.03200008 5.96046e-8 0 1 -0.001000048 0 0 0 1</matrix>
+                                  <node id="Avatar_mHandThumb3Left" name="mHandThumb3Left" sid="mHandThumb3Left" type="JOINT">
+                                    <matrix sid="transform">1 0 0 0.02299998 2.98023e-8 1 0 0.03099997 1.19209e-7 -2.98023e-8 0.9999999 -0.001000237 0 0 0 1</matrix>
+                                    <extra>
+                                      <technique profile="blender">
+                                        <connect sid="connect" type="bool">1</connect>
+                                        <collections type="string">Layer 24
+Layer 26</collections>
+                                        <roll sid="roll" type="float">0.785398</roll>
+                                        <tip_x sid="tip_x" type="float">0.01499998</tip_x>
+                                        <tip_y sid="tip_y" type="float">0.02499997</tip_y>
+                                        <tip_z sid="tip_z" type="float">0</tip_z>
+                                      </technique>
+                                    </extra>
+                                  </node>
+                                  <extra>
+                                    <technique profile="blender">
+                                      <connect sid="connect" type="bool">1</connect>
+                                      <collections type="string">Layer 24
+Layer 26</collections>
+                                      <roll sid="roll" type="float">0.836862</roll>
+                                    </technique>
+                                  </extra>
+                                </node>
+                                <extra>
+                                  <technique profile="blender">
+                                    <collections type="string">Layer 24
+Layer 26</collections>
+                                    <roll sid="roll" type="float">0.837212</roll>
+                                  </technique>
+                                </extra>
+                              </node>
+                              <extra>
+                                <technique profile="blender">
+                                  <connect sid="connect" type="bool">1</connect>
+                                  <collections type="string">Layer 17</collections>
+                                  <tip_x sid="tip_x" type="float">0</tip_x>
+                                  <tip_y sid="tip_y" type="float">0.06</tip_y>
+                                  <tip_z sid="tip_z" type="float">0</tip_z>
+                                </technique>
+                              </extra>
+                            </node>
+                            <extra>
+                              <technique profile="blender">
+                                <connect sid="connect" type="bool">1</connect>
+                                <collections type="string">Layer 17</collections>
+                              </technique>
+                            </extra>
+                          </node>
+                          <extra>
+                            <technique profile="blender">
+                              <connect sid="connect" type="bool">1</connect>
+                              <collections type="string">Layer 17</collections>
+                            </technique>
+                          </extra>
+                        </node>
+                        <extra>
+                          <technique profile="blender">
+                            <collections type="string">Layer 17</collections>
+                          </technique>
+                        </extra>
+                      </node>
+                      <node id="Avatar_mCollarRight" name="mCollarRight" sid="mCollarRight" type="JOINT">
+                        <matrix sid="transform">1 3.72529e-9 3.56158e-9 -0.02071801 0 1 1.16415e-10 -0.072 -3.17232e-9 1.16415e-10 1 0.1653961 0 0 0 1</matrix>
+                        <node id="Avatar_mShoulderRight" name="mShoulderRight" sid="mShoulderRight" type="JOINT">
+                          <matrix sid="transform">1 -5.44908e-16 1.77636e-15 -5.9171e-10 0 1 0 -0.07941803 -3.55271e-15 1.77636e-15 1 3.25722e-10 0 0 0 1</matrix>
+                          <node id="Avatar_mElbowRight" name="mElbowRight" sid="mElbowRight" type="JOINT">
+                            <matrix sid="transform">1 0 0 0 7.12582e-16 1 0 -0.27776 0 0 1 1.20765e-9 0 0 0 1</matrix>
+                            <node id="Avatar_mWristRight" name="mWristRight" sid="mWristRight" type="JOINT">
+                              <matrix sid="transform">1 0 0 0 7.12581e-16 1 0 -0.2419001 0 0 1 1.20765e-9 0 0 0 1</matrix>
+                              <node id="Avatar_mHandMiddle1Right" name="mHandMiddle1Right" sid="mHandMiddle1Right" type="JOINT">
+                                <matrix sid="transform">1 7.45058e-9 0 0.013 -7.45059e-9 1 -4.5402e-9 -0.1009999 3.66346e-9 1.49012e-8 1 0.01499998 0 0 0 1</matrix>
+                                <node id="Avatar_mHandMiddle2Right" name="mHandMiddle2Right" sid="mHandMiddle2Right" type="JOINT">
+                                  <matrix sid="transform">1 0 0 -9.99954e-4 -2.23517e-8 1 -2.98023e-8 -0.04000017 5.96046e-8 1.49012e-8 1 -0.005999843 0 0 0 1</matrix>
+                                  <node id="Avatar_mHandMiddle3Right" name="mHandMiddle3Right" sid="mHandMiddle3Right" type="JOINT">
+                                    <matrix sid="transform">1 1.86265e-8 2.98023e-8 -0.001000014 -1.49012e-8 1 -1.49012e-8 -0.04900002 2.98023e-8 2.98023e-8 1 -0.007999978 0 0 0 1</matrix>
+                                    <extra>
+                                      <technique profile="blender">
+                                        <connect sid="connect" type="bool">1</connect>
+                                        <collections type="string">Layer 24
+Layer 26</collections>
+                                        <roll sid="roll" type="float">-0.169034</roll>
+                                        <tip_x sid="tip_x" type="float">-0.001999974</tip_x>
+                                        <tip_y sid="tip_y" type="float">-0.03299999</tip_y>
+                                        <tip_z sid="tip_z" type="float">-0.006000041</tip_z>
+                                      </technique>
+                                    </extra>
+                                  </node>
+                                  <extra>
+                                    <technique profile="blender">
+                                      <connect sid="connect" type="bool">1</connect>
+                                      <collections type="string">Layer 24
+Layer 26</collections>
+                                      <roll sid="roll" type="float">-0.15855</roll>
+                                    </technique>
+                                  </extra>
+                                </node>
+                                <extra>
+                                  <technique profile="blender">
+                                    <collections type="string">Layer 24
+Layer 26</collections>
+                                    <roll sid="roll" type="float">-0.145182</roll>
+                                  </technique>
+                                </extra>
+                              </node>
+                              <node id="Avatar_mHandIndex1Right" name="mHandIndex1Right" sid="mHandIndex1Right" type="JOINT">
+                                <matrix sid="transform">0.9999999 0 2.98023e-8 0.038 -3.72529e-8 1 4.01633e-8 -0.09699992 6.32681e-8 1.49012e-8 1 0.01499998 0 0 0 1</matrix>
+                                <node id="Avatar_mHandIndex2Right" name="mHandIndex2Right" sid="mHandIndex2Right" type="JOINT">
+                                  <matrix sid="transform">0.9999999 4.47035e-8 -5.96046e-8 0.01700012 -8.9407e-8 1 -1.49012e-8 -0.03599986 2.98023e-8 0 0.9999999 -0.006000046 0 0 0 1</matrix>
+                                  <node id="Avatar_mHandIndex3Right" name="mHandIndex3Right" sid="mHandIndex3Right" type="JOINT">
+                                    <matrix sid="transform">1 1.49012e-8 -2.98023e-8 0.01400002 -7.45058e-8 0.9999999 -1.49012e-8 -0.03200006 5.96046e-8 1.49012e-8 1 -0.00600001 0 0 0 1</matrix>
+                                    <extra>
+                                      <technique profile="blender">
+                                        <connect sid="connect" type="bool">1</connect>
+                                        <collections type="string">Layer 24
+Layer 26</collections>
+                                        <roll sid="roll" type="float">-0.222322</roll>
+                                        <tip_x sid="tip_x" type="float">0.01099997</tip_x>
+                                        <tip_y sid="tip_y" type="float">-0.02499997</tip_y>
+                                        <tip_z sid="tip_z" type="float">-0.003999948</tip_z>
+                                      </technique>
+                                    </extra>
+                                  </node>
+                                  <extra>
+                                    <technique profile="blender">
+                                      <connect sid="connect" type="bool">1</connect>
+                                      <collections type="string">Layer 24
+Layer 26</collections>
+                                      <roll sid="roll" type="float">-0.259285</roll>
+                                    </technique>
+                                  </extra>
+                                </node>
+                                <extra>
+                                  <technique profile="blender">
+                                    <collections type="string">Layer 24
+Layer 26</collections>
+                                    <roll sid="roll" type="float">-0.235404</roll>
+                                  </technique>
+                                </extra>
+                              </node>
+                              <node id="Avatar_mHandRing1Right" name="mHandRing1Right" sid="mHandRing1Right" type="JOINT">
+                                <matrix sid="transform">0.9999999 -1.49012e-8 -2.98023e-8 -0.009999998 2.23517e-8 1 -1.19908e-8 -0.09899995 3.34658e-8 -2.98023e-8 1 0.009000062 0 0 0 1</matrix>
+                                <node id="Avatar_mHandRing2Right" name="mHandRing2Right" sid="mHandRing2Right" type="JOINT">
+                                  <matrix sid="transform">1 -7.45058e-9 -8.9407e-8 -0.0130001 0 1 2.23517e-8 -0.03799998 -5.96046e-8 2.98023e-8 1 -0.007999982 0 0 0 1</matrix>
+                                  <node id="Avatar_mHandRing3Right" name="mHandRing3Right" sid="mHandRing3Right" type="JOINT">
+                                    <matrix sid="transform">1 -2.98023e-8 -2.98023e-8 -0.01299998 0 1 1.49012e-8 -0.04000004 0 0 1 -0.009000113 0 0 0 1</matrix>
+                                    <extra>
+                                      <technique profile="blender">
+                                        <connect sid="connect" type="bool">1</connect>
+                                        <collections type="string">Layer 24
+Layer 26</collections>
+                                        <roll sid="roll" type="float">-0.1405619</roll>
+                                        <tip_x sid="tip_x" type="float">-0.00999999</tip_x>
+                                        <tip_y sid="tip_y" type="float">-0.02799999</tip_y>
+                                        <tip_z sid="tip_z" type="float">-0.006000041</tip_z>
+                                      </technique>
+                                    </extra>
+                                  </node>
+                                  <extra>
+                                    <technique profile="blender">
+                                      <connect sid="connect" type="bool">1</connect>
+                                      <collections type="string">Layer 24
+Layer 26</collections>
+                                      <roll sid="roll" type="float">-0.153414</roll>
+                                    </technique>
+                                  </extra>
+                                </node>
+                                <extra>
+                                  <technique profile="blender">
+                                    <collections type="string">Layer 24
+Layer 26</collections>
+                                    <roll sid="roll" type="float">-0.1407639</roll>
+                                  </technique>
+                                </extra>
+                              </node>
+                              <node id="Avatar_mHandPinky1Right" name="mHandPinky1Right" sid="mHandPinky1Right" type="JOINT">
+                                <matrix sid="transform">1 3.35276e-8 0 -0.031 2.98023e-8 1 2.91037e-9 -0.09499995 3.66346e-9 7.45058e-9 1 0.003000021 0 0 0 1</matrix>
+                                <node id="Avatar_mHandPinky2Right" name="mHandPinky2Right" sid="mHandPinky2Right" type="JOINT">
+                                  <matrix sid="transform">1 4.09782e-8 0 -0.02400006 6.33299e-8 1 2.23517e-8 -0.02499989 5.96046e-8 -1.49012e-8 0.9999999 -0.006000054 0 0 0 1</matrix>
+                                  <node id="Avatar_mHandPinky3Right" name="mHandPinky3Right" sid="mHandPinky3Right" type="JOINT">
+                                    <matrix sid="transform">1 6.70552e-8 2.98023e-8 -0.01500005 -5.96046e-8 1 0 -0.01800006 2.98023e-8 2.98023e-8 1 -0.003999962 0 0 0 1</matrix>
+                                    <extra>
+                                      <technique profile="blender">
+                                        <connect sid="connect" type="bool">1</connect>
+                                        <collections type="string">Layer 24
+Layer 26</collections>
+                                        <roll sid="roll" type="float">-0.09143495</roll>
+                                        <tip_x sid="tip_x" type="float">-0.01299995</tip_x>
+                                        <tip_y sid="tip_y" type="float">-0.01599997</tip_y>
+                                        <tip_z sid="tip_z" type="float">-0.003999948</tip_z>
+                                      </technique>
+                                    </extra>
+                                  </node>
+                                  <extra>
+                                    <technique profile="blender">
+                                      <connect sid="connect" type="bool">1</connect>
+                                      <collections type="string">Layer 24
+Layer 26</collections>
+                                      <roll sid="roll" type="float">-0.07934099</roll>
+                                    </technique>
+                                  </extra>
+                                </node>
+                                <extra>
+                                  <technique profile="blender">
+                                    <collections type="string">Layer 24
+Layer 26</collections>
+                                    <roll sid="roll" type="float">-0.07321596</roll>
+                                  </technique>
+                                </extra>
+                              </node>
+                              <node id="Avatar_mHandThumb1Right" name="mHandThumb1Right" sid="mHandThumb1Right" type="JOINT">
+                                <matrix sid="transform">1 -5.96046e-8 -5.96046e-8 0.031 2.23517e-8 1 -3.43425e-8 -0.02599997 -5.59412e-8 2.98023e-8 1 0.003999948 0 0 0 1</matrix>
+                                <node id="Avatar_mHandThumb2Right" name="mHandThumb2Right" sid="mHandThumb2Right" type="JOINT">
+                                  <matrix sid="transform">1 -5.96046e-8 0 0.02799997 2.98023e-8 1 -2.98023e-8 -0.0320001 0 0 1 -9.99836e-4 0 0 0 1</matrix>
+                                  <node id="Avatar_mHandThumb3Right" name="mHandThumb3Right" sid="mHandThumb3Right" type="JOINT">
+                                    <matrix sid="transform">1 0 -5.96046e-8 0.02299988 2.98023e-8 1 -2.98023e-8 -0.03100006 8.9407e-8 -5.96046e-8 0.9999999 -9.99988e-4 0 0 0 1</matrix>
+                                    <extra>
+                                      <technique profile="blender">
+                                        <connect sid="connect" type="bool">1</connect>
+                                        <collections type="string">Layer 24
+Layer 26</collections>
+                                        <roll sid="roll" type="float">-0.785398</roll>
+                                        <tip_x sid="tip_x" type="float">0.01499998</tip_x>
+                                        <tip_y sid="tip_y" type="float">-0.02499997</tip_y>
+                                        <tip_z sid="tip_z" type="float">0</tip_z>
+                                      </technique>
+                                    </extra>
+                                  </node>
+                                  <extra>
+                                    <technique profile="blender">
+                                      <connect sid="connect" type="bool">1</connect>
+                                      <collections type="string">Layer 24
+Layer 26</collections>
+                                      <roll sid="roll" type="float">-0.836862</roll>
+                                    </technique>
+                                  </extra>
+                                </node>
+                                <extra>
+                                  <technique profile="blender">
+                                    <collections type="string">Layer 24
+Layer 26</collections>
+                                    <roll sid="roll" type="float">-0.837212</roll>
+                                  </technique>
+                                </extra>
+                              </node>
+                              <extra>
+                                <technique profile="blender">
+                                  <connect sid="connect" type="bool">1</connect>
+                                  <collections type="string">Layer 17</collections>
+                                  <tip_x sid="tip_x" type="float">0</tip_x>
+                                  <tip_y sid="tip_y" type="float">-0.06</tip_y>
+                                  <tip_z sid="tip_z" type="float">0</tip_z>
+                                </technique>
+                              </extra>
+                            </node>
+                            <extra>
+                              <technique profile="blender">
+                                <connect sid="connect" type="bool">1</connect>
+                                <collections type="string">Layer 17</collections>
+                              </technique>
+                            </extra>
+                          </node>
+                          <extra>
+                            <technique profile="blender">
+                              <connect sid="connect" type="bool">1</connect>
+                              <collections type="string">Layer 17</collections>
+                            </technique>
+                          </extra>
+                        </node>
+                        <extra>
+                          <technique profile="blender">
+                            <collections type="string">Layer 17</collections>
+                          </technique>
+                        </extra>
+                      </node>
+                      <node id="Avatar_mWingsRoot" name="mWingsRoot" sid="mWingsRoot" type="JOINT">
+                        <matrix sid="transform">1 0 3.56158e-9 -0.014 0 1 1.16415e-10 3.49246e-10 5.52973e-10 0 1 3.55456e-8 0 0 0 1</matrix>
+                        <node id="Avatar_mWing1Left" name="mWing1Left" sid="mWing1Left" type="JOINT">
+                          <matrix sid="transform">1 4.19095e-8 8.4583e-9 -0.09900001 1.86265e-8 1 7.91623e-9 0.09500001 -1.99179e-8 -4.30737e-9 1 0.1810001 0 0 0 1</matrix>
+                          <node id="Avatar_mWing2Left" name="mWing2Left" sid="mWing2Left" type="JOINT">
+                            <matrix sid="transform">1 -9.12696e-8 -1.30385e-8 -0.168 -3.72529e-8 1 2.98023e-8 0.1690001 -1.49012e-8 -2.98023e-8 1 0.06700001 0 0 0 1</matrix>
+                            <node id="Avatar_mWing3Left" name="mWing3Left" sid="mWing3Left" type="JOINT">
+                              <matrix sid="transform">0.9999999 1.52499e-14 0 -0.181 2.84855e-15 1 3.55271e-15 0.183 -7.10543e-15 0 1 1.26906e-7 0 0 0 1</matrix>
+                              <node id="Avatar_mWing4Left" name="mWing4Left" sid="mWing4Left" type="JOINT">
+                                <matrix sid="transform">1 2.73582e-15 0 -0.171 -2.8002e-15 1 0 0.1729999 -3.55271e-15 0 1 1.17605e-7 0 0 0 1</matrix>
+                                <extra>
+                                  <technique profile="blender">
+                                    <connect sid="connect" type="bool">1</connect>
+                                    <collections type="string">Layer 24
+Layer 27</collections>
+                                    <tip_x sid="tip_x" type="float">-0.146</tip_x>
+                                    <tip_y sid="tip_y" type="float">0.1319999</tip_y>
+                                    <tip_z sid="tip_z" type="float">0</tip_z>
+                                  </technique>
+                                </extra>
+                              </node>
+                              <node id="Avatar_mWing4FanLeft" name="mWing4FanLeft" sid="mWing4FanLeft" type="JOINT">
+                                <matrix sid="transform">1 2.98023e-8 -2.24854e-8 -0.171 -1.84876e-15 1 2.27483e-8 0.1729999 -1.53374e-8 4.47891e-8 1 1.17605e-7 0 0 0 1</matrix>
+                                <extra>
+                                  <technique profile="blender">
+                                    <connect sid="connect" type="bool">1</connect>
+                                    <collections type="string">Layer 24
+Layer 27</collections>
+                                    <roll sid="roll" type="float">0.439623</roll>
+                                    <tip_x sid="tip_x" type="float">-0.06800001</tip_x>
+                                    <tip_y sid="tip_y" type="float">0.06199997</tip_y>
+                                    <tip_z sid="tip_z" type="float">-0.159</tip_z>
+                                  </technique>
+                                </extra>
+                              </node>
+                              <extra>
+                                <technique profile="blender">
+                                  <connect sid="connect" type="bool">1</connect>
+                                  <collections type="string">Layer 24
+Layer 27</collections>
+                                </technique>
+                              </extra>
+                            </node>
+                            <extra>
+                              <technique profile="blender">
+                                <connect sid="connect" type="bool">1</connect>
+                                <collections type="string">Layer 24
+Layer 27</collections>
+                              </technique>
+                            </extra>
+                          </node>
+                          <extra>
+                            <technique profile="blender">
+                              <collections type="string">Layer 24
+Layer 27</collections>
+                              <roll sid="roll" type="float">-0.114601</roll>
+                            </technique>
+                          </extra>
+                        </node>
+                        <node id="Avatar_mWing1Right" name="mWing1Right" sid="mWing1Right" type="JOINT">
+                          <matrix sid="transform">1 7.82311e-8 -1.57561e-8 -0.09899999 6.70552e-8 1 2.28174e-8 -0.09500001 3.40988e-8 -4.30737e-9 1 0.1810001 0 0 0 1</matrix>
+                          <node id="Avatar_mWing2Right" name="mWing2Right" sid="mWing2Right" type="JOINT">
+                            <matrix sid="transform">1 2.98023e-8 0 -0.168 6.70552e-8 1 2.98023e-8 -0.169 -8.9407e-8 2.98023e-8 1 0.06700003 0 0 0 1</matrix>
+                            <node id="Avatar_mWing3Right" name="mWing3Right" sid="mWing3Right" type="JOINT">
+                              <matrix sid="transform">1 -2.80715e-15 3.55271e-15 -0.181 6.93936e-15 1 7.10543e-15 -0.183 -7.10543e-15 2.13163e-14 1 9.63736e-9 0 0 0 1</matrix>
+                              <node id="Avatar_mWing4Right" name="mWing4Right" sid="mWing4Right" type="JOINT">
+                                <matrix sid="transform">1 -4.06691e-15 7.10543e-15 -0.171 2.98023e-8 1 1.06581e-14 -0.173 0 0 1 4.2894e-9 0 0 0 1</matrix>
+                                <extra>
+                                  <technique profile="blender">
+                                    <connect sid="connect" type="bool">1</connect>
+                                    <collections type="string">Layer 24
+Layer 27</collections>
+                                    <tip_x sid="tip_x" type="float">-0.146</tip_x>
+                                    <tip_y sid="tip_y" type="float">-0.1319999</tip_y>
+                                    <tip_z sid="tip_z" type="float">0</tip_z>
+                                  </technique>
+                                </extra>
+                              </node>
+                              <node id="Avatar_mWing4FanRight" name="mWing4FanRight" sid="mWing4FanRight" type="JOINT">
+                                <matrix sid="transform">1 5.96046e-8 5.6668e-9 -0.171 2.98023e-8 1 3.75286e-8 -0.173 -5.95264e-9 -1.02467e-10 1 4.2894e-9 0 0 0 1</matrix>
+                                <extra>
+                                  <technique profile="blender">
+                                    <connect sid="connect" type="bool">1</connect>
+                                    <collections type="string">Layer 24
+Layer 27</collections>
+                                    <roll sid="roll" type="float">-0.439623</roll>
+                                    <tip_x sid="tip_x" type="float">-0.06800001</tip_x>
+                                    <tip_y sid="tip_y" type="float">-0.06199997</tip_y>
+                                    <tip_z sid="tip_z" type="float">-0.159</tip_z>
+                                  </technique>
+                                </extra>
+                              </node>
+                              <extra>
+                                <technique profile="blender">
+                                  <connect sid="connect" type="bool">1</connect>
+                                  <collections type="string">Layer 24
+Layer 27</collections>
+                                </technique>
+                              </extra>
+                            </node>
+                            <extra>
+                              <technique profile="blender">
+                                <connect sid="connect" type="bool">1</connect>
+                                <collections type="string">Layer 24
+Layer 27</collections>
+                              </technique>
+                            </extra>
+                          </node>
+                          <extra>
+                            <technique profile="blender">
+                              <collections type="string">Layer 24
+Layer 27</collections>
+                              <roll sid="roll" type="float">0.114601</roll>
+                            </technique>
+                          </extra>
+                        </node>
+                        <extra>
+                          <technique profile="blender">
+                            <collections type="string">Layer 24
+Layer 27</collections>
+                            <tip_x sid="tip_x" type="float">-0.06099998</tip_x>
+                            <tip_y sid="tip_y" type="float">0</tip_y>
+                            <tip_z sid="tip_z" type="float">0</tip_z>
+                          </technique>
+                        </extra>
+                      </node>
+                      <extra>
+                        <technique profile="blender">
+                          <connect sid="connect" type="bool">1</connect>
+                          <collections type="string">Layer 17</collections>
+                        </technique>
+                      </extra>
+                    </node>
+                    <extra>
+                      <technique profile="blender">
+                        <connect sid="connect" type="bool">1</connect>
+                        <collections type="string">Layer 24
+Layer 30</collections>
+                      </technique>
+                    </extra>
+                  </node>
+                  <extra>
+                    <technique profile="blender">
+                      <connect sid="connect" type="bool">1</connect>
+                      <collections type="string">Layer 24
+Layer 30</collections>
+                    </technique>
+                  </extra>
+                </node>
+                <extra>
+                  <technique profile="blender">
+                    <connect sid="connect" type="bool">1</connect>
+                    <collections type="string">Layer 17</collections>
+                  </technique>
+                </extra>
+              </node>
+              <extra>
+                <technique profile="blender">
+                  <connect sid="connect" type="bool">1</connect>
+                  <collections type="string">Layer 24
+Layer 30</collections>
+                </technique>
+              </extra>
+            </node>
+            <extra>
+              <technique profile="blender">
+                <connect sid="connect" type="bool">1</connect>
+                <collections type="string">Layer 24
+Layer 30</collections>
+              </technique>
+            </extra>
+          </node>
+          <node id="Avatar_mHipRight" name="mHipRight" sid="mHipRight" type="JOINT">
+            <matrix sid="transform">1 1.49012e-8 0 0.03362 7.45058e-9 0.9999999 -7.45058e-9 -0.128806 -8.88178e-16 -7.45059e-9 0.9999999 -0.04108607 0 0 0 1</matrix>
+            <node id="Avatar_mKneeRight" name="mKneeRight" sid="mKneeRight" type="JOINT">
+              <matrix sid="transform">1 2.23517e-8 -3.72529e-9 -7.8e-4 1.49012e-8 1 -7.45058e-9 0.04863498 8.3819e-9 -7.45058e-9 1 -0.4909218 0 0 0 1</matrix>
+              <node id="Avatar_mAnkleRight" name="mAnkleRight" sid="mAnkleRight" type="JOINT">
+                <matrix sid="transform">1 1.11759e-8 3.77477e-8 -0.02886899 -3.72529e-9 1 -3.77186e-8 -3.46853e-9 2.83617e-8 2.09548e-9 1 -0.468494 0 0 0 1</matrix>
+                <node id="Avatar_mFootRight" name="mFootRight" sid="mFootRight" type="JOINT">
+                  <matrix sid="transform">1 2.98023e-8 2.98023e-8 0.111956 0 1 0 5.78736e-9 0 2.98023e-8 1 -0.060637 0 0 0 1</matrix>
+                  <node id="Avatar_mToeRight" name="mToeRight" sid="mToeRight" type="JOINT">
+                    <matrix sid="transform">0.9999999 1.95363e-12 -2.84217e-14 0.109 1.17028e-12 0.9999999 0 9.31461e-10 -2.84217e-14 -4.54747e-13 0.9999999 3.40575e-9 0 0 0 1</matrix>
+                    <extra>
+                      <technique profile="blender">
+                        <collections type="string">Layer 17</collections>
+                        <tip_x sid="tip_x" type="float">0.01999998</tip_x>
+                        <tip_y sid="tip_y" type="float">0</tip_y>
+                        <tip_z sid="tip_z" type="float">0</tip_z>
+                      </technique>
+                    </extra>
+                  </node>
+                  <extra>
+                    <technique profile="blender">
+                      <connect sid="connect" type="bool">1</connect>
+                      <collections type="string">Layer 17</collections>
+                      <tip_x sid="tip_x" type="float">0.105</tip_x>
+                      <tip_y sid="tip_y" type="float">-0.00999999</tip_y>
+                      <tip_z sid="tip_z" type="float">0</tip_z>
+                    </technique>
+                  </extra>
+                </node>
+                <extra>
+                  <technique profile="blender">
+                    <connect sid="connect" type="bool">1</connect>
+                    <collections type="string">Layer 17</collections>
+                  </technique>
+                </extra>
+              </node>
+              <extra>
+                <technique profile="blender">
+                  <connect sid="connect" type="bool">1</connect>
+                  <collections type="string">Layer 17</collections>
+                </technique>
+              </extra>
+            </node>
+            <extra>
+              <technique profile="blender">
+                <collections type="string">Layer 17</collections>
+                <roll sid="roll" type="float">-0.08726596</roll>
+              </technique>
+            </extra>
+          </node>
+          <node id="Avatar_mHipLeft" name="mHipLeft" sid="mHipLeft" type="JOINT">
+            <matrix sid="transform">1 0 -9.31323e-10 0.033757 -7.45058e-9 1 0 0.126765 8.88178e-16 7.45055e-9 0.9999999 -0.0409981 0 0 0 1</matrix>
+            <node id="Avatar_mKneeLeft" name="mKneeLeft" sid="mKneeLeft" type="JOINT">
+              <matrix sid="transform">1 -2.23517e-8 4.65661e-9 -8.87005e-4 0 1 -7.45058e-9 -0.04556801 -6.51926e-9 7.45058e-9 1 -0.491053 0 0 0 1</matrix>
+              <node id="Avatar_mAnkleLeft" name="mAnkleLeft" sid="mAnkleLeft" type="JOINT">
+                <matrix sid="transform">1 1.11759e-8 3.09665e-8 -0.028887 -1.11759e-8 1 4.23752e-8 0.001378005 -3.23053e-8 -3.86499e-8 1 -0.4684491 0 0 0 1</matrix>
+                <node id="Avatar_mFootLeft" name="mFootLeft" sid="mFootLeft" type="JOINT">
+                  <matrix sid="transform">1 -1.49012e-8 0 0.111956 -5.96046e-8 1 5.96046e-8 -6.66487e-9 -2.98023e-8 -2.98023e-8 1 -0.06062001 0 0 0 1</matrix>
+                  <node id="Avatar_mToeLeft" name="mToeLeft" sid="mToeLeft" type="JOINT">
+                    <matrix sid="transform">1 4.65661e-9 -1.86265e-9 0.109 -3.25963e-9 1 2.98023e-8 -6.0536e-9 1.86265e-9 0 1 6.98492e-9 0 0 0 1</matrix>
+                    <extra>
+                      <technique profile="blender">
+                        <collections type="string">Layer 17</collections>
+                        <tip_x sid="tip_x" type="float">0.01999998</tip_x>
+                        <tip_y sid="tip_y" type="float">0</tip_y>
+                        <tip_z sid="tip_z" type="float">0</tip_z>
+                      </technique>
+                    </extra>
+                  </node>
+                  <extra>
+                    <technique profile="blender">
+                      <connect sid="connect" type="bool">1</connect>
+                      <collections type="string">Layer 17</collections>
+                      <roll sid="roll" type="float">-0.2495869</roll>
+                      <tip_x sid="tip_x" type="float">0.105</tip_x>
+                      <tip_y sid="tip_y" type="float">0.007999956</tip_y>
+                      <tip_z sid="tip_z" type="float">0.000999987</tip_z>
+                    </technique>
+                  </extra>
+                </node>
+                <extra>
+                  <technique profile="blender">
+                    <connect sid="connect" type="bool">1</connect>
+                    <collections type="string">Layer 17</collections>
+                  </technique>
+                </extra>
+              </node>
+              <extra>
+                <technique profile="blender">
+                  <connect sid="connect" type="bool">1</connect>
+                  <collections type="string">Layer 17</collections>
+                </technique>
+              </extra>
+            </node>
+            <extra>
+              <technique profile="blender">
+                <collections type="string">Layer 17</collections>
+                <roll sid="roll" type="float">0.08726596</roll>
+              </technique>
+            </extra>
+          </node>
+          <node id="Avatar_mTail1" name="mTail1" sid="mTail1" type="JOINT">
+            <matrix sid="transform">1 0 0 -0.116 0 0.9999999 0 0 0 0 0.9999999 0.04699993 0 0 0 1</matrix>
+            <node id="Avatar_mTail2" name="mTail2" sid="mTail2" type="JOINT">
+              <matrix sid="transform">1 0 0 -0.197 0 0.9999999 0 0 0 0 0.9999999 0 0 0 0 1</matrix>
+              <node id="Avatar_mTail3" name="mTail3" sid="mTail3" type="JOINT">
+                <matrix sid="transform">1 0 0 -0.168 0 0.9999999 0 0 0 0 0.9999999 0 0 0 0 1</matrix>
+                <node id="Avatar_mTail4" name="mTail4" sid="mTail4" type="JOINT">
+                  <matrix sid="transform">1 0 0 -0.142 0 0.9999999 0 0 0 0 0.9999999 0 0 0 0 1</matrix>
+                  <node id="Avatar_mTail5" name="mTail5" sid="mTail5" type="JOINT">
+                    <matrix sid="transform">1 0 0 -0.1120001 0 0.9999999 0 0 0 0 0.9999999 0 0 0 0 1</matrix>
+                    <node id="Avatar_mTail6" name="mTail6" sid="mTail6" type="JOINT">
+                      <matrix sid="transform">1 0 0 -0.09400004 0 0.9999999 0 0 0 0 0.9999999 0 0 0 0 1</matrix>
+                      <extra>
+                        <technique profile="blender">
+                          <connect sid="connect" type="bool">1</connect>
+                          <collections type="string">Layer 24
+Layer 28</collections>
+                          <tip_x sid="tip_x" type="float">-0.08899998</tip_x>
+                          <tip_y sid="tip_y" type="float">0</tip_y>
+                          <tip_z sid="tip_z" type="float">0</tip_z>
+                        </technique>
+                      </extra>
+                    </node>
+                    <extra>
+                      <technique profile="blender">
+                        <connect sid="connect" type="bool">1</connect>
+                        <collections type="string">Layer 24
+Layer 28</collections>
+                      </technique>
+                    </extra>
+                  </node>
+                  <extra>
+                    <technique profile="blender">
+                      <connect sid="connect" type="bool">1</connect>
+                      <collections type="string">Layer 24
+Layer 28</collections>
+                    </technique>
+                  </extra>
+                </node>
+                <extra>
+                  <technique profile="blender">
+                    <connect sid="connect" type="bool">1</connect>
+                    <collections type="string">Layer 24
+Layer 28</collections>
+                  </technique>
+                </extra>
+              </node>
+              <extra>
+                <technique profile="blender">
+                  <connect sid="connect" type="bool">1</connect>
+                  <collections type="string">Layer 24
+Layer 28</collections>
+                </technique>
+              </extra>
+            </node>
+            <extra>
+              <technique profile="blender">
+                <collections type="string">Layer 24
+Layer 28</collections>
+              </technique>
+            </extra>
+          </node>
+          <node id="Avatar_mGroin" name="mGroin" sid="mGroin" type="JOINT">
+            <matrix sid="transform">1 0 1.20781e-9 0.064 0 0.9999999 0 0 -2.54658e-9 2.32816e-10 0.9999999 -0.097 0 0 0 1</matrix>
+            <extra>
+              <technique profile="blender">
+                <collections type="string">Layer 24
+Layer 29</collections>
+                <tip_x sid="tip_x" type="float">0.003999948</tip_x>
+                <tip_y sid="tip_y" type="float">0</tip_y>
+                <tip_z sid="tip_z" type="float">-0.06599998</tip_z>
+              </technique>
+            </extra>
+          </node>
+          <node id="Avatar_mHindLimbsRoot" name="mHindLimbsRoot" sid="mHindLimbsRoot" type="JOINT">
+            <matrix sid="transform">1 0 0 -0.2 0 0.9999999 0 0 0 0 0.9999999 0.08399998 0 0 0 1</matrix>
+            <node id="Avatar_mHindLimb1Left" name="mHindLimb1Left" sid="mHindLimb1Left" type="JOINT">
+              <matrix sid="transform">1 1.49012e-8 9.31323e-10 -0.204 0 1 -9.92095e-10 0.129 0 -6.4585e-9 0.9999999 -0.125 0 0 0 1</matrix>
+              <node id="Avatar_mHindLimb2Left" name="mHindLimb2Left" sid="mHindLimb2Left" type="JOINT">
+                <matrix sid="transform">1 1.49012e-8 2.79397e-9 0.002000009 -1.49012e-8 1 0 -0.046 9.31323e-10 -7.45058e-9 1 -0.4910001 0 0 0 1</matrix>
+                <node id="Avatar_mHindLimb3Left" name="mHindLimb3Left" sid="mHindLimb3Left" type="JOINT">
+                  <matrix sid="transform">1 -1.49012e-8 -2.97441e-8 -0.03000007 -7.45058e-9 1 3.49246e-9 -0.003000007 2.64845e-8 2.42144e-8 1 -0.468 0 0 0 1</matrix>
+                  <node id="Avatar_mHindLimb4Left" name="mHindLimb4Left" sid="mHindLimb4Left" type="JOINT">
+                    <matrix sid="transform">0.9999999 1.49012e-8 2.98023e-8 0.112 -1.49012e-8 0.9999998 2.98023e-8 -4.75102e-10 0 2.98023e-8 0.9999999 -0.061 0 0 0 1</matrix>
+                    <extra>
+                      <technique profile="blender">
+                        <connect sid="connect" type="bool">1</connect>
+                        <collections type="string">Layer 24
+Layer 31</collections>
+                        <roll sid="roll" type="float">-0.249574</roll>
+                        <tip_x sid="tip_x" type="float">0.105</tip_x>
+                        <tip_y sid="tip_y" type="float">0.007999956</tip_y>
+                        <tip_z sid="tip_z" type="float">0</tip_z>
+                      </technique>
+                    </extra>
+                  </node>
+                  <extra>
+                    <technique profile="blender">
+                      <connect sid="connect" type="bool">1</connect>
+                      <collections type="string">Layer 24
+Layer 31</collections>
+                    </technique>
+                  </extra>
+                </node>
+                <extra>
+                  <technique profile="blender">
+                    <connect sid="connect" type="bool">1</connect>
+                    <collections type="string">Layer 24
+Layer 31</collections>
+                  </technique>
+                </extra>
+              </node>
+              <extra>
+                <technique profile="blender">
+                  <collections type="string">Layer 24
+Layer 31</collections>
+                  <roll sid="roll" type="float">0.08726596</roll>
+                </technique>
+              </extra>
+            </node>
+            <node id="Avatar_mHindLimb1Right" name="mHindLimb1Right" sid="mHindLimb1Right" type="JOINT">
+              <matrix sid="transform">1 -7.45058e-9 9.31323e-10 -0.204 0 0.9999999 -9.92095e-10 -0.129 0 8.44267e-9 0.9999999 -0.125 0 0 0 1</matrix>
+              <node id="Avatar_mHindLimb2Right" name="mHindLimb2Right" sid="mHindLimb2Right" type="JOINT">
+                <matrix sid="transform">1 -1.49012e-8 3.72529e-9 0.002000032 0 1 0 0.04600003 -1.39698e-9 1.49012e-8 1 -0.4910001 0 0 0 1</matrix>
+                <node id="Avatar_mHindLimb3Right" name="mHindLimb3Right" sid="mHindLimb3Right" type="JOINT">
+                  <matrix sid="transform">1 7.45058e-9 1.75787e-8 -0.03 -7.45058e-9 1 -1.39698e-8 0.003 -4.02215e-8 -3.35276e-8 1 -0.468 0 0 0 1</matrix>
+                  <node id="Avatar_mHindLimb4Right" name="mHindLimb4Right" sid="mHindLimb4Right" type="JOINT">
+                    <matrix sid="transform">1 -4.47035e-8 0 0.112 1.49012e-8 1 0 2.66241e-8 0 -2.98023e-8 1 -0.06100002 0 0 0 1</matrix>
+                    <extra>
+                      <technique profile="blender">
+                        <connect sid="connect" type="bool">1</connect>
+                        <collections type="string">Layer 24
+Layer 31</collections>
+                        <roll sid="roll" type="float">0.249574</roll>
+                        <tip_x sid="tip_x" type="float">0.105</tip_x>
+                        <tip_y sid="tip_y" type="float">-0.007999956</tip_y>
+                        <tip_z sid="tip_z" type="float">0</tip_z>
+                      </technique>
+                    </extra>
+                  </node>
+                  <extra>
+                    <technique profile="blender">
+                      <connect sid="connect" type="bool">1</connect>
+                      <collections type="string">Layer 24
+Layer 31</collections>
+                    </technique>
+                  </extra>
+                </node>
+                <extra>
+                  <technique profile="blender">
+                    <connect sid="connect" type="bool">1</connect>
+                    <collections type="string">Layer 24
+Layer 31</collections>
+                  </technique>
+                </extra>
+              </node>
+              <extra>
+                <technique profile="blender">
+                  <collections type="string">Layer 24
+Layer 31</collections>
+                  <roll sid="roll" type="float">-0.08726596</roll>
+                </technique>
+              </extra>
+            </node>
+            <extra>
+              <technique profile="blender">
+                <collections type="string">Layer 24
+Layer 31</collections>
+                <tip_x sid="tip_x" type="float">-0.2039999</tip_x>
+                <tip_y sid="tip_y" type="float">0</tip_y>
+                <tip_z sid="tip_z" type="float">0</tip_z>
+              </technique>
+            </extra>
+          </node>
+          <extra>
+            <technique profile="blender">
+              <collections type="string">Layer 17</collections>
+            </technique>
+          </extra>
+        </node>
+        <extra>
+          <technique profile="blender">
+            <collections sid="collections" type="string">Layer 17
+Layer 24
+Layer 25
+Layer 26
+Layer 27
+Layer 28
+Layer 29
+Layer 30
+Layer 31</collections>
+            <visible_collections sid="visible_collections" type="string">Layer 17
+Layer 24
+Layer 25
+Layer 26
+Layer 27
+Layer 28
+Layer 29
+Layer 30
+Layer 31</visible_collections>
+            <active_collection sid="active_collection" type="string">Layer 17</active_collection>
+          </technique>
+        </extra>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
