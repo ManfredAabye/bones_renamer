@@ -1,0 +1,159 @@
+Hier ist die komplette Knochenliste, die aus dem XML extrahiert wurde, strukturiert nach Hierarchie und Gruppen:
+
+### Hauptkörper
+1. **mPelvis** (Hüfte)
+   - mSpine1 (Wirbelsäule)
+     - mSpine2
+       - mTorso (Torso)
+         - mSpine3
+           - mSpine4
+             - mChest (Brust)
+               - mNeck (Nacken)
+                 - mHead (Kopf)
+                   - mSkull (Schädel)
+                   - mEyeRight (rechtes Auge)
+                   - mEyeLeft (linkes Auge)
+                   - mFaceRoot (Gesichtswurzel)
+                     - (Alle Gesichtsknochen, siehe Gesichtsliste weiter unten)
+               - mCollarLeft (linkes Schlüsselbein)
+                 - mShoulderLeft (linke Schulter)
+                   - mElbowLeft (linker Ellenbogen)
+                     - mWristLeft (linkes Handgelenk)
+                       - (Alle linken Handknochen, siehe Handliste weiter unten)
+               - mCollarRight (rechtes Schlüsselbein)
+                 - mShoulderRight (rechte Schulter)
+                   - mElbowRight (rechter Ellenbogen)
+                     - mWristRight (rechtes Handgelenk)
+                       - (Alle rechten Handknochen, siehe Handliste weiter unten)
+               - mWingsRoot (Flügelwurzel)
+                 - mWing1Left (linker Flügel)
+                   - mWing2Left
+                     - mWing3Left
+                       - mWing4Left
+                       - mWing4FanLeft
+                 - mWing1Right (rechter Flügel)
+                   - mWing2Right
+                     - mWing3Right
+                       - mWing4Right
+                       - mWing4FanRight
+   - mHipRight (rechte Hüfte)
+     - mKneeRight (rechtes Knie)
+       - mAnkleRight (rechter Knöchel)
+         - mFootRight (rechter Fuß)
+           - mToeRight (rechte Zehen)
+   - mHipLeft (linke Hüfte)
+     - mKneeLeft (linkes Knie)
+       - mAnkleLeft (linker Knöchel)
+         - mFootLeft (linker Fuß)
+           - mToeLeft (linke Zehen)
+   - mTail1 (Schwanz)
+     - mTail2
+       - mTail3
+         - mTail4
+           - mTail5
+             - mTail6
+   - mGroin (Leiste)
+   - mHindLimbsRoot (Hinterbeine)
+     - mHindLimb1Left (linkes Hinterbein)
+       - mHindLimb2Left
+         - mHindLimb3Left
+           - mHindLimb4Left
+     - mHindLimb1Right (rechtes Hinterbein)
+       - mHindLimb2Right
+         - mHindLimb3Right
+           - mHindLimb4Right
+
+### Gesichtsknochen (mFaceRoot)
+1. **mFaceEyeAltRight**
+2. **mFaceEyeAltLeft**
+3. **mFaceForeheadLeft**
+4. **mFaceForeheadRight**
+5. **mFaceEyebrowOuterLeft**
+6. **mFaceEyebrowCenterLeft**
+7. **mFaceEyebrowInnerLeft**
+8. **mFaceEyebrowOuterRight**
+9. **mFaceEyebrowCenterRight**
+10. **mFaceEyebrowInnerRight**
+11. **mFaceEyeLidUpperLeft**
+12. **mFaceEyeLidLowerLeft**
+13. **mFaceEyeLidUpperRight**
+14. **mFaceEyeLidLowerRight**
+15. **mFaceEar1Left**
+   - mFaceEar2Left
+16. **mFaceEar1Right**
+   - mFaceEar2Right
+17. **mFaceNoseLeft**
+18. **mFaceNoseCenter**
+19. **mFaceNoseRight**
+20. **mFaceCheekLowerLeft**
+21. **mFaceCheekUpperLeft**
+22. **mFaceCheekLowerRight**
+23. **mFaceCheekUpperRight**
+24. **mFaceJaw** (Unterkiefer)
+   - mFaceChin (Kinn)
+   - mFaceTeethLower (Untere Zähne)
+     - mFaceLipLowerLeft
+     - mFaceLipLowerRight
+     - mFaceLipLowerCenter
+     - mFaceTongueBase (Zungenwurzel)
+       - mFaceTongueTip (Zungenspitze)
+25. **mFaceJawShaper**
+26. **mFaceForeheadCenter**
+27. **mFaceNoseBase**
+28. **mFaceTeethUpper** (Obere Zähne)
+   - mFaceLipUpperLeft
+   - mFaceLipUpperRight
+   - mFaceLipCornerLeft
+   - mFaceLipCornerRight
+   - mFaceLipUpperCenter
+29. **mFaceEyecornerInnerLeft**
+30. **mFaceEyecornerInnerRight**
+31. **mFaceNoseBridge**
+
+### Handknochen (linke und rechte Varianten)
+1. **mHandMiddle1**
+   - mHandMiddle2
+     - mHandMiddle3
+2. **mHandIndex1**
+   - mHandIndex2
+     - mHandIndex3
+3. **mHandRing1**
+   - mHandRing2
+     - mHandRing3
+4. **mHandPinky1**
+   - mHandPinky2
+     - mHandPinky3
+5. **mHandThumb1**
+   - mHandThumb2
+     - mHandThumb3
+
+### Kollisionsvolumen (Collision Volumes)
+- PELVIS
+- BUTT
+- BELLY
+- LEFT_HANDLE
+- RIGHT_HANDLE
+- LOWER_BACK
+- CHEST
+- LEFT_PEC
+- RIGHT_PEC
+- UPPER_BACK
+- NECK
+- HEAD
+- L_CLAVICLE
+- R_CLAVICLE
+- L_UPPER_ARM
+- R_UPPER_ARM
+- L_LOWER_ARM
+- R_LOWER_ARM
+- L_HAND
+- R_HAND
+- R_UPPER_LEG
+- L_UPPER_LEG
+- R_LOWER_LEG
+- L_LOWER_LEG
+- R_FOOT
+- L_FOOT
+
+Diese Liste enthält alle 133 Knochen und 26 Kollisionsvolumen aus der XML-Datei, strukturiert nach ihrer hierarchischen Anordnung im Skelettsystem. 
+Die Bezeichnungen folgen dem Linden-Skelett-Standard mit den Präfixen "m" für "mesh" und klaren Gruppenzuordnungen.
