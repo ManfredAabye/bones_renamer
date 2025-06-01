@@ -1,0 +1,94 @@
+import bpy
+
+# Angepasste Knochenstruktur für dein Plugin
+BONES_STRUCTURE_DICTIONARY = {
+    "mPelvis": {
+        "mSpine1": {
+            "mSpine2": {
+                "mTorso": {
+                    "mSpine3": {
+                        "mSpine4": {
+                            "mChest": {
+                                "mNeck": {
+                                    "mHead": {
+                                        "mSkull": {},
+                                        "mEyeRight": {},
+                                        "mEyeLeft": {},
+                                        "mFaceRoot": {
+                                            "mFaceEyebrowOuterLeft": {},
+                                            "mFaceEyebrowCenterLeft": {},
+                                            "mFaceEyebrowInnerLeft": {},
+                                            "mFaceEyebrowOuterRight": {},
+                                            "mFaceEyebrowCenterRight": {},
+                                            "mFaceEyebrowInnerRight": {},
+                                            "mFaceEyeLidUpperLeft": {},
+                                            "mFaceEyeLidLowerLeft": {},
+                                            "mFaceEyeLidUpperRight": {},
+                                            "mFaceEyeLidLowerRight": {},
+                                            "mFaceEar1Left": {
+                                                "mFaceEar2Left": {}
+                                            },
+                                            "mFaceEar1Right": {
+                                                "mFaceEar2Right": {}
+                                            },
+                                            "mFaceNoseLeft": {},
+                                            "mFaceNoseCenter": {},
+                                            "mFaceNoseRight": {},
+                                            "mFaceCheekLowerLeft": {},
+                                            "mFaceCheekUpperLeft": {},
+                                            "mFaceCheekLowerRight": {},
+                                            "mFaceCheekUpperRight": {},
+                                            "mFaceJaw": {
+                                                "mFaceChin": {},
+                                                "mFaceTeethLower": {
+                                                    "mFaceLipLowerLeft": {},
+                                                    "mFaceLipLowerRight": {},
+                                                    "mFaceLipLowerCenter": {},
+                                                    "mFaceTongueBase": {
+                                                        "mFaceTongueTip": {}
+                                                    }
+                                                }
+                                            },
+                                            "mFaceTeethUpper": {
+                                                "mFaceLipUpperLeft": {},
+                                                "mFaceLipUpperRight": {},
+                                                "mFaceLipCornerLeft": {},
+                                                "mFaceLipCornerRight": {},
+                                                "mFaceLipUpperCenter": {},
+                                            },
+                                            "mFaceEyecornerInnerLeft": {},
+                                            "mFaceEyecornerInnerRight": {},
+                                            "mFaceNoseBridge": {}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+# Funktion zum Übertragen der Knochennamen in Blender
+def apply_bone_structure():
+    """Überträgt die neue Knochenstruktur auf das aktive Armature-Objekt."""
+    if bpy.context.object and bpy.context.object.type == 'ARMATURE':
+        armature = bpy.context.object.data
+        
+        for bone_name, children in BONES_STRUCTURE_DICTIONARY.items():
+            if bone_name in armature.bones:
+                bone = armature.bones[bone_name]
+                for child_name in children.keys():
+                    if child_name in armature.bones:
+                        armature.bones[child_name].parent = bone
+
+# Knochennamen anzeigen und aktivieren
+use_international_fonts_display_names_bones()
+
+# Falls nötig, alle Armaturen sichtbar machen
+unhide_all_armatures()
+
+# Knochenstruktur anwenden
+apply_bone_structure()
