@@ -1,0 +1,41 @@
+import bpy
+
+# Mapping von Mixamo-Bones zu OpenSim-kompatiblen Namen
+MIXAMO_TO_OPENSIM = {
+    "Hips": "mPelvis",
+    "Spine": "mSpine1",
+    "Spine1": "mSpine2",
+    "Spine2": "mSpine3",
+    "Spine3": "mSpine4",
+    "Neck": "mNeck",
+    "Head": "mHead",
+    "LeftShoulder": "mCollarLeft",
+    "LeftArm": "mShoulderLeft",
+    "LeftForeArm": "mElbowLeft",
+    "LeftHand": "mWristLeft",
+    "RightShoulder": "mCollarRight",
+    "RightArm": "mShoulderRight",
+    "RightForeArm": "mElbowRight",
+    "RightHand": "mWristRight",
+    "LeftLeg": "mHipLeft",
+    "LeftUpLeg": "mHipLeft",
+    "LeftFoot": "mAnkleLeft",
+    "LeftToeBase": "mToeLeft",
+    "RightLeg": "mHipRight",
+    "RightUpLeg": "mHipRight",
+    "RightFoot": "mAnkleRight",
+    "RightToeBase": "mToeRight"
+}
+
+# Knochen im aktuellen Armature-Objekt umbenennen
+def rename_mixamo_to_opensim():
+    """Benenne Mixamo-Knochen in OpenSim-kompatible Namen um"""
+    if bpy.context.active_object and bpy.context.active_object.type == 'ARMATURE':
+        armature = bpy.context.active_object.data
+        for bone in armature.bones:
+            if bone.name in MIXAMO_TO_OPENSIM:
+                bone.name = MIXAMO_TO_OPENSIM[bone.name]
+                print(f"Umbenannt: {bone.name}")
+
+# Skript ausführen
+rename_mixamo_to_opensim()
