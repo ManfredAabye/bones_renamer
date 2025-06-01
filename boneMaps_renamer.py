@@ -1,5 +1,7 @@
+import bpy
 # Bone name mappings for various 3D software formats
 # Format: [MMD English, XNALara, DAZ/Poser, Blender Rigify, Sims 2, Motion Builder, 3ds Max, Bepu, MMD Japanese, MMD Japanese LR, OpenSim]
+# Version: 1.0.0
 
 BONE_NAMES_DICTIONARY = [
     # Root/Torso
@@ -80,15 +82,22 @@ FINGER_BONE_NAMES_DICTIONARY = [
 
 def use_international_fonts_display_names_bones():
     """Enable international fonts and show bone names"""
-    bpy.context.preferences.view.use_international_fonts = True  # Updated for Blender 4.4
-    if bpy.context.object and bpy.context.object.type == 'ARMATURE':
-        bpy.context.object.data.show_names = True
+    try:
+        # Aktualisierter Zugriff für Blender 4.4
+        bpy.context.preferences.view.use_international_fonts = True
+        if bpy.context.object and bpy.context.object.type == 'ARMATURE':
+            bpy.context.object.data.show_names = True
+    except AttributeError as e:
+        print(f"Fehler bei Einstellungen: {e}")
 
 def unhide_all_armatures():
     """Unhide all armatures in the scene"""
-    for o in bpy.context.scene.objects:
-        if o.type == 'ARMATURE':
-            o.hide_set(False)  # Updated method for Blender 4.4
+    try:
+        for o in bpy.context.scene.objects:
+            if o.type == 'ARMATURE':
+                o.hide_set(False)  # Moderner API-Aufruf
+    except Exception as e:
+        print(f"Fehler beim Anzeigen von Armatures: {e}")
 
 def rename_bones(boneMap1, boneMap2):
     """Mass rename bones between different naming conventions"""
