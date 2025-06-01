@@ -1,4 +1,4 @@
-Hier ist die komplette Knochenliste, die aus dem XML extrahiert wurde, strukturiert nach Hierarchie und Gruppen:
+Hier ist die komplette Knochenliste für OpenSim:
 
 ### Hauptkörper
 1. **mPelvis** (Hüfte)

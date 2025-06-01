@@ -1,7 +1,8 @@
 import bpy
+
 # Bone name mappings for various 3D software formats
 # Format: [MMD English, XNALara, DAZ/Poser, Blender Rigify, Sims 2, Motion Builder, 3ds Max, Bepu, MMD Japanese, MMD Japanese LR, OpenSim]
-# Version: 1.0.0
+# Version: 1.0.1 (Fixed missing bones and removed type_x)
 
 BONE_NAMES_DICTIONARY = [
     # Root/Torso
@@ -9,9 +10,15 @@ BONE_NAMES_DICTIONARY = [
     ("neck", "head neck lower", "neck", "neck", "neck", "Neck", "Neck", "Neck", "neck", "首", "首", "mNeck"),
     ("head", "head neck upper", "head", "head", "head", "Head", "Head", "Head", "head", "頭", "頭", "mHead"),
     ("center", "root hips", "hip", 'hips', "root_rot", "Hips", "Hips", "Hip", "", "センター", "センター", "mPelvis"),
-    ("upper body 2", "spine upper", "chest", "chest", "spine2", "Spine2", "Chest3", "", 'chest', "上半身2", "上半身2", "mChest"),
-    ("upper body", "spine lower", "abdomen", "spine", "spine0", "chest", "Chest", "Chest1", 'spine', "上半身", "上半身", "mTorso"),
-    ("lower body", "pelvis", "", "", "", "", "", "", 'hips', "下半身", "下半身", ""),
+    
+    # Spine (added missing spine bones)
+    ("spine", "spine lower", "spine0", "spine", "spine0", "Spine", "Spine", "Spine0", "spine", "上半身", "上半身", "mSpine1"),
+    ("spine1", "spine middle", "spine1", "spine.001", "spine1", "Spine1", "Spine1", "Spine1", "spine1", "上半身1", "上半身1", "mSpine2"),
+    ("spine2", "spine upper", "spine2", "spine.002", "spine2", "Spine2", "Spine2", "Spine2", "spine2", "上半身2", "上半身2", "mSpine3"),
+    ("chest", "chest", "chest", "chest", "chest", "Chest", "Chest", "Chest", "chest", "胸", "胸", "mSpine4"),
+    ("upper body", "spine upper", "abdomen", "spine.003", "spine3", "chest", "Chest2", "Chest1", "upperbody", "上半身", "上半身", "mTorso"),
+    ("upper body 2", "spine chest", "chest", "spine.004", "spine4", "Spine3", "Chest3", "Chest2", "upperbody2", "上半身3", "上半身3", "mChest"),
+    ("lower body", "pelvis", "hip", "pelvis", "pelvis", "Pelvis", "Pelvis", "Hip", "lowerbody", "下半身", "下半身", "mPelvis"),
 
     # Left Arm
     ("shoulder_L", "arm left shoulder 1", "lCollar", "shoulder.L", "l_clavicle", "LeftShoulder", "LeftCollar", "Left Collar", 'shoulder.L', "左肩", "肩.L", "mCollarLeft"),
@@ -42,12 +49,25 @@ BONE_NAMES_DICTIONARY = [
     # Eyes
     ("eye_L", "head eyeball left", "leftEye", "eye.L", "l_eye", "LeftEye", "LeftEye", "Left Eye", 'eye.L', "左目", "目.L", "mEyeLeft"),
     ("eye_R", "head eyeball right", "rightEye", "eye.R", "r_eye", "RightEye", "RightEye", "Right Eye", 'eye.R', "右目", "目.R", "mEyeRight"),
+
+    # Face (added key face bones)
+    ("jaw", "head jaw", "jaw", "jaw_master", "", "Jaw", "Jaw", "", "", "あご", "あご", "mFaceJaw"),
+    ("tongue", "head tongue", "tongue", "tongue", "", "Tongue", "Tongue", "", "", "舌", "舌", "mFaceTongueBase"),
+    
+    # Tail (added missing tail bones)
+    ("tail1", "tail 1", "tail1", "tail.001", "", "", "", "", "", "尾１", "尾１", "mTail1"),
+    ("tail2", "tail 2", "tail2", "tail.002", "", "", "", "", "", "尾２", "尾２", "mTail2"),
+    ("tail3", "tail 3", "tail3", "tail.003", "", "", "", "", "", "尾３", "尾３", "mTail3"),
+    ("tail4", "tail 4", "tail4", "tail.004", "", "", "", "", "", "尾４", "尾４", "mTail4"),
+    ("tail5", "tail 5", "tail5", "tail.005", "", "", "", "", "", "尾５", "尾５", "mTail5"),
+    ("tail6", "tail 6", "tail6", "tail.006", "", "", "", "", "", "尾６", "尾６", "mTail6"),
 ]
 
 FINGER_BONE_NAMES_DICTIONARY = [
     # Left Hand
     ("thumb1_L", "arm left finger 1b", "lThumb2", "thumb.02.L", "l_thumb1", 'LeftHandThumb2', 'LeftFinger01', 'finger1-3.L', "左親指１", "親指１.L", "mHandThumb1Left"),
     ("thumb2_L", "arm left finger 1c", "lThumb3", "thumb.03.L", "l_thumb2", 'LeftHandThumb3', 'LeftFinger02', 'finger1-4.L', "左親指２", "親指２.L", "mHandThumb2Left"),
+    ("thumb3_L", "arm left finger 1d", "lThumb4", "thumb.04.L", "l_thumb3", 'LeftHandThumb4', 'LeftFinger03', 'finger1-5.L', "左親指３", "親指３.L", "mHandThumb3Left"),
     ("fore1_L", "arm left finger 2a", "lIndex1", "f_index.01.L", "l_index0", 'LeftHandIndex1', 'LeftFinger1', 'finger2-2.L', "左人指１", "人指１.L", "mHandIndex1Left"),
     ("fore2_L", "arm left finger 2b", "lIndex2", "f_index.02.L", "l_index1", 'LeftHandIndex2', 'LeftFinger11', 'finger2-3.L', "左人指２", "人指２.L", "mHandIndex2Left"),
     ("fore3_L", "arm left finger 2c", "lIndex3", "f_index.03.L", "l_index2", 'LeftHandIndex3', 'LeftFinger12', 'finger2-4.L', "左人指３", "人指３.L", "mHandIndex3Left"),
@@ -65,6 +85,7 @@ FINGER_BONE_NAMES_DICTIONARY = [
     # Right Hand
     ("thumb1_R", "arm right finger 1b", "rThumb2", "thumb.02.R", "r_thumb1", 'RightHandThumb2', 'RightFinger01', 'finger1-3.R', "右親指１", "親指１.R", "mHandThumb1Right"),
     ("thumb2_R", "arm right finger 1c", "rThumb3", "thumb.03.R", "r_thumb2", 'RightHandThumb3', 'RightFinger02', 'finger1-4.R', "右親指２", "親指２.R", "mHandThumb2Right"),
+    ("thumb3_R", "arm right finger 1d", "rThumb4", "thumb.04.R", "r_thumb3", 'RightHandThumb4', 'RightFinger03', 'finger1-5.R', "右親指３", "親指３.R", "mHandThumb3Right"),
     ("fore1_R", "arm right finger 2a", "rIndex1", "f_index.01.R", "r_index0", 'RightHandIndex1', 'RightFinger1', 'finger2-2.R', "右人指１", "人指１.R", "mHandIndex1Right"),
     ("fore2_R", "arm right finger 2b", "rIndex2", "f_index.02.R", "r_index1", 'RightHandIndex2', 'RightFinger11', 'finger2-3.R', "右人指２", "人指２.R", "mHandIndex2Right"),
     ("fore3_R", "arm right finger 2c", "rIndex3", "f_index.03.R", "r_index2", 'RightHandIndex3', 'RightFinger12', 'finger2-4.R', "右人指３", "人指３.R", "mHandIndex3Right"),
@@ -83,32 +104,35 @@ FINGER_BONE_NAMES_DICTIONARY = [
 def use_international_fonts_display_names_bones():
     """Enable international fonts and show bone names"""
     try:
-        # Aktualisierter Zugriff für Blender 4.4
         bpy.context.preferences.view.use_international_fonts = True
         if bpy.context.object and bpy.context.object.type == 'ARMATURE':
             bpy.context.object.data.show_names = True
     except AttributeError as e:
-        print(f"Fehler bei Einstellungen: {e}")
+        print(f"Error in settings: {e}")
 
 def unhide_all_armatures():
     """Unhide all armatures in the scene"""
     try:
         for o in bpy.context.scene.objects:
             if o.type == 'ARMATURE':
-                o.hide_set(False)  # Moderner API-Aufruf
+                o.hide_set(False)
     except Exception as e:
-        print(f"Fehler beim Anzeigen von Armatures: {e}")
+        print(f"Error showing armatures: {e}")
 
 def rename_bones(boneMap1, boneMap2):
     """Mass rename bones between different naming conventions"""
     boneMaps = (
         'mmd_english', 'xna_lara', 'daz_poser', 'blender_rigify', 
-        'sims_2', 'motion_builder', '3ds_max', 'type_x', 
-        'bepu', 'mmd_japanese', 'mmd_japaneseLR', 'opensim'
+        'sims_2', 'motion_builder', '3ds_max', 'bepu', 
+        'mmd_japanese', 'mmd_japaneseLR', 'opensim'
     )
     
-    boneMap1_index = boneMaps.index(boneMap1)
-    boneMap2_index = boneMaps.index(boneMap2)
+    try:
+        boneMap1_index = boneMaps.index(boneMap1)
+        boneMap2_index = boneMaps.index(boneMap2)
+    except ValueError as e:
+        print(f"Invalid bone map specified: {e}")
+        return
     
     # Ensure we're in object mode
     if bpy.context.active_object and bpy.context.active_object.mode != 'OBJECT':
@@ -120,7 +144,10 @@ def rename_bones(boneMap1, boneMap2):
             tgt_name = bone_entry[boneMap2_index]
             
             if src_name and tgt_name and src_name in bpy.context.active_object.data.bones:
-                bpy.context.active_object.data.bones[src_name].name = tgt_name
+                try:
+                    bpy.context.active_object.data.bones[src_name].name = tgt_name
+                except Exception as e:
+                    print(f"Error renaming {src_name} to {tgt_name}: {e}")
 
 def rename_finger_bones(boneMap1, boneMap2):
     """Mass rename finger bones between different naming conventions"""
@@ -130,8 +157,12 @@ def rename_finger_bones(boneMap1, boneMap2):
         'mmd_japanese', 'mmd_japaneseLR', 'opensim'
     )
     
-    boneMap1_index = boneMaps.index(boneMap1)
-    boneMap2_index = boneMaps.index(boneMap2)
+    try:
+        boneMap1_index = boneMaps.index(boneMap1)
+        boneMap2_index = boneMaps.index(boneMap2)
+    except ValueError as e:
+        print(f"Invalid bone map specified: {e}")
+        return
     
     # Ensure we're in object mode
     if bpy.context.active_object and bpy.context.active_object.mode != 'OBJECT':
@@ -143,4 +174,7 @@ def rename_finger_bones(boneMap1, boneMap2):
             tgt_name = bone_entry[boneMap2_index]
             
             if src_name and tgt_name and src_name in bpy.context.active_object.data.bones:
-                bpy.context.active_object.data.bones[src_name].name = tgt_name
+                try:
+                    bpy.context.active_object.data.bones[src_name].name = tgt_name
+                except Exception as e:
+                    print(f"Error renaming {src_name} to {tgt_name}: {e}")
